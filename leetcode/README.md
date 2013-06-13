@@ -152,6 +152,8 @@ Populating Next Right Pointers in Each Node: easy
 
 Populating Next Right Pointers in Each Node II: medium 
 
+Pow(x, n): tricky Integer boundary
+
 Recover Binary Search Tree: inorder traversal ※
 
 Reverse Integer: easy
