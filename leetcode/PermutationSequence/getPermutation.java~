@@ -1,0 +1,45 @@
+public class Solution {
+    public String getPermutation(int n, int k) {
+        // Start typing your Java solution below
+        // DO NOT write main() function
+        int stat[] = new int[n];
+        char letters[] = new char[n];
+        
+        int idx = -1;
+        for (int i = 0; i < n; i++) {
+            letters[i] = (char)('0' + (i + 1));
+            stat[i] = i == 0 ? 1 : stat[i - 1] * (i + 1);
+            if (stat[i] < k) idx = i;
+        }
+        
+        int num;
+        while (idx >= 0 && k != 0) {            
+            num = k / stat[idx];
+            k = k % stat[idx];
+            swapElement(letters, n - idx - 2 + (k == 0 ? num - 1 : num), n - idx - 2);
+            if (k == 0) {
+		reverseArray(letters, n - 1 - idx, n);  
+		break;
+            } 
+            idx--;
+        }
+        return new String(letters);
+    }
+    private void reverseArray(char[] array, int start, int end) {
+        if (start == end - 1) return;
+        int len = end - start;
+        for (int i = 0; i < len / 2; i++) {
+            char tmp = array[start + i];
+            array[start + i] = array[end - i - 1];
+            array[end - i - 1] = tmp;
+        }
+    }
+    private void swapElement(char[] array, int src, int dst) {
+        if (src <= dst) return;
+        char tmp = array[src];
+        for (int i = src; i > dst; i--) {
+            array[i] = array[i - 1];
+        }
+        array[dst] = tmp;
+    }
+}

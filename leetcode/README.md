@@ -1,0 +1,203 @@
+My solutions to the leetcode online judge questions.
+
+3Sum: easy
+
+3Sum Closest: easy
+
+4Sum: O(n^3) consider efficiency of ArrayList expansion operation
+
+Add Binary: easy
+
+Add Two Numbers: easy
+
+Anagrams: easy
+
+Balanced Binary Tree: easy
+
+Best Time to Buy and Sell Stock: easy
+
+Best Time to Buy and Sell Stock II: medium
+
+Best Time to Buy and Sell Stock III: DP
+
+Binary Tree Inorder Traversal: iteratively
+
+Binary Tree Level Order Traversal: easy
+
+Binary Tree Level Order Traversal II: easy
+
+Binary Tree Maximum Path Sum: hard
+
+Binary Tree Zigzag Level Order Traversal: medium
+
+Climbing Stairs: DP
+
+Combination Sum: recursion
+
+Combination Sum II: recursion
+
+Combinations: both iterative and recursion
+
+Construct Binary Tree from Inorder and Postorder Traversal: easy
+
+Construct Binary Tree from Preorder and Inorder Traversal: easy
+
+Container With Most Water: hard greedy tricky
+
+Convert Sorted Array to Binary Search Tree: easy
+
+Convert Sorted List to Binary Search Tree: hard bottom-up recursion
+
+Count and Say: easy
+
+Decode Ways: DP medium
+
+Distinct Subsequences: DP medium
+
+Divide Two Integers: binary medium
+
+Edit Distance: DP medium
+
+First Missing Positive: classic
+
+Flatten Binary Tree to Linked List: easy
+
+Generate Parentheses: recursion
+
+Gray Code: classic trick generating subsets or binary numbers
+
+Implement strStr(): easy
+
+Insert Interval: medium
+
+Integer to Roman: medium 
+
+Interleaving String: DP
+
+Jump Game: Greedy O(n) BFS or DFS
+
+Jump Game II ※: DP BFS hard
+
+Largest Rectangle in Histogram: left right idx problem. Non-descending sequence using stack
+
+Length of Last Word: easy
+
+Letter Combinations of a Phone Number: easy
+
+Longest Common Prefix: easy
+
+Longest Consecutive Sequence ※: hash
+
+Longest Palindromic Substring: DP 
+
+Longest Substring Without Repeating Characters: O(n) using hash 
+
+Longest Valid Parentheses ※: stack + DP + max O(n) time complexity
+
+Maximal Rectangle ※: use union-find set to construct the monotone queue instead of the stack. Stack will exceed time limit for large judge. 
+
+Maximum Depth of Binary Tree: easy
+
+Maximum Subarray: easy
+
+Median of Two Sorted Arrays: double binary search hard
+
+Merge Intervals: easy
+
+Merge k Sorted Lists: priority queue of size k
+
+Merge Sorted Array: easy
+
+Merge Two Sorted List: easy
+
+Minimum Depth of Binary Tree: make sure to understand the definition of minDepth which is to count the distance between root and the "leaf" node
+
+Minimum Path Sum: DP
+
+Minimum Window Substring: hard
+
+Multiply Strings: medium large number or string
+
+N-Queens: easy
+
+N-Queens II: easy
+
+Next Permutation: classic 
+
+Palindrome Number: easy
+
+Palindrome Partitioning: recursion
+
+Palindrome Partitioning II: DP on sol and palindrome
+
+Partition List: detail..
+
+Pascal's Triangle: DP 
+
+Pascal's Triangle II: DP easy
+
+Path Sum: easy
+
+Path Sum II: easy 
+
+Permutation Sequence: easy 
+
+Permutations: no duplicate recursion medium
+
+Permutations II: next permutation problem
+
+Plus One: easy find the last 9 seq
+
+Populating Next Right Pointers in Each Node: medium
+
+Recover Binary Search Tree: inorder traversal ※
+
+Reverse Integer: easy
+
+Reverse Linked List II: easy
+
+Rotate Image: classic
+
+Scramble String: classic, recursion & pruning
+
+Simplify Path: easy
+
+Sort Colors: Dutch National Flag Problem loop invariant
+
+Spiral Matrix: classic
+
+Spiral Matrix II: easy
+
+Sqrt(x): easy
+
+String to Integer (atoi): boundary
+
+Subsets: easy
+
+Subsets II: both iterative and recursion. Recursion is the same with Combination Sum. Subsets could also use this recursion solution.  
+
+Substring with Concatenation of All Words: hash hash
+
+Sudoku Solver: medium recursion & bit masking & 2-d array to 1-d array
+
+Sum Root to Leaf Numbers: easy
+
+Surrounded Regions: medium queue
+
+Swap Nodes in Pairs: easy
+
+Symmetric Tree: recursively and iteratively by using queues
+
+Text Justification: medium
+
+Trapping Rain Water: double-way DP O(n)
+
+Triangle: DP O(n^2)
+
+Two Sum: easy
+
+Valid Palindrome: easy
+
+Word Ladder: medium
+
+Word Ladder II: hard (HashSet ArrayList add remove time)
