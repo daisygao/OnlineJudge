@@ -148,7 +148,9 @@ Permutations II: next permutation problem
 
 Plus One: easy find the last 9 seq
 
-Populating Next Right Pointers in Each Node: medium
+Populating Next Right Pointers in Each Node: easy
+
+Populating Next Right Pointers in Each Node II: medium 
 
 Recover Binary Search Tree: inorder traversal ※
 
