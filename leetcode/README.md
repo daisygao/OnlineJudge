@@ -100,7 +100,7 @@ Maximum Depth of Binary Tree: easy
 
 Maximum Subarray: easy
 
-Median of Two Sorted Arrays: double binary search hard
+Median of Two Sorted Arrays: binary search hard 
 
 Merge Intervals: easy
 
