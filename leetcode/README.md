@@ -166,6 +166,8 @@ Remove Duplicates from Sorted List: !
 
 Remove Duplicates from Sorted List II: easy
 
+Remove Element: easy
+
 Reverse Integer: easy
 
 Reverse Linked List II: easy
