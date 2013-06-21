@@ -156,6 +156,8 @@ Pow(x, n): tricky Integer boundary
 
 Recover Binary Search Tree: both recursively and iteratively medium
 
+Regular Expression Matching: medium recursion
+
 Reverse Integer: easy
 
 Reverse Linked List II: easy
