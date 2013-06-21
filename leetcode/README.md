@@ -160,6 +160,8 @@ Regular Expression Matching: medium recursion
 
 Remove Duplicates from Sorted Array: easy
 
+Remove Duplicates from Sorted Array II: easy
+
 Reverse Integer: easy
 
 Reverse Linked List II: easy
