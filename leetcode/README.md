@@ -164,6 +164,8 @@ Remove Duplicates from Sorted Array II: easy
 
 Remove Duplicates from Sorted List: !
 
+Remove Duplicates from Sorted List II: easy
+
 Reverse Integer: easy
 
 Reverse Linked List II: easy
