@@ -168,6 +168,8 @@ Remove Duplicates from Sorted List II: easy
 
 Remove Element: easy
 
+Remove Nth Node From End of List: classic
+
 Reverse Integer: easy
 
 Reverse Linked List II: easy
