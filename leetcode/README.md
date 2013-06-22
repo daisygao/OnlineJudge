@@ -170,6 +170,8 @@ Remove Element: easy
 
 Remove Nth Node From End of List: classic
 
+Restore IP Addresses: recursion easy
+
 Reverse Integer: easy
 
 Reverse Linked List II: easy
