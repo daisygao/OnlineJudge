@@ -2,7 +2,6 @@ public class Solution {
     public ArrayList<String> restoreIpAddresses(String s) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        String eg = "";
         return helper(s, 0); 
     }
     private ArrayList<String> helper(String s, int cnt) {
