@@ -174,7 +174,7 @@ Restore IP Addresses: recursion easy
 
 Reverse Integer: easy overflow
 
-Reverse Linked List II: easy
+Reverse Linked List II: classic 
 
 Rotate Image: classic
 
