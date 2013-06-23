@@ -176,6 +176,8 @@ Reverse Integer: easy overflow
 
 Reverse Linked List II: classic 
 
+Reverse Nodes in k-Group: easy
+
 Rotate Image: classic
 
 Scramble String: classic, recursion & pruning
