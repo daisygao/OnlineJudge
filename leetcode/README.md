@@ -172,7 +172,7 @@ Remove Nth Node From End of List: classic
 
 Restore IP Addresses: recursion easy
 
-Reverse Integer: easy
+Reverse Integer: easy overflow
 
 Reverse Linked List II: easy
 
