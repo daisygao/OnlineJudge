@@ -182,6 +182,8 @@ Roman to Integer: easy
 
 Rotate Image: classic
 
+Rotate List: medium
+
 Scramble String: classic, recursion & pruning
 
 Simplify Path: easy
