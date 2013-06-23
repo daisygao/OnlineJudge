@@ -178,6 +178,8 @@ Reverse Linked List II: classic
 
 Reverse Nodes in k-Group: easy
 
+Roman to Integer: easy
+
 Rotate Image: classic
 
 Scramble String: classic, recursion & pruning
