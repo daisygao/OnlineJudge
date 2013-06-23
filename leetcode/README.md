@@ -180,7 +180,7 @@ Reverse Nodes in k-Group: easy
 
 Roman to Integer: easy
 
-Rotate Image: classic
+Rotate Image: classic details
 
 Rotate List: medium
 

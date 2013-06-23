@@ -3,16 +3,15 @@ public class Solution {
         // Start typing your Java solution below
         // DO NOT write main() function
         int n = matrix.length;
-        if (n < 2) return;
-        for (int layer = 0; layer < n / 2; layer++) {
-            int first = layer, last = n - layer - 1;
-            for (int idx = layer; idx < last; idx++) {
-                int offset = idx - layer;
-                int top = matrix[layer][idx];
-                matrix[layer][idx] = matrix[last - offset][first];
-                matrix[last - offset][first] = matrix[last][last - offset];
-                matrix[last][last - offset] = matrix[first + offset][last];
-                matrix[first + offset][last] = top;
+        //if (n == 0) return;
+        int layer = n / 2;
+        for (int i = 0; i < layer; i++) {
+            for (int j = i; j < n - 1 - i; j++) {
+                int x = matrix[i][j];
+                matrix[i][j] = matrix[n - 1 - j][i];
+                matrix[n - 1 - j][i] = matrix[n - 1 - i][n - 1 - j];
+                matrix[n - 1 - i][n - 1 - j] = matrix[j][n - 1 - i];
+                matrix[j][n - 1 - i] = x;
             }
         }
     }
