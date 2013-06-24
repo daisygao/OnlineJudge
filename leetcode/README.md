@@ -184,6 +184,8 @@ Rotate Image: classic details
 
 Rotate List: medium
 
+Same Tree: easy
+
 Scramble String: classic, recursion & pruning
 
 Simplify Path: easy
