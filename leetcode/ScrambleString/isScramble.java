@@ -2,28 +2,26 @@ public class Solution {
     public boolean isScramble(String s1, String s2) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        int len1 = s1.length(), len2 = s2.length();
-        if (len1 != len2) return false;
-        if (len2 == 1) return s1.equals(s2);
-        boolean ret = false;
-        for (int idx = 1; idx < len2; idx++) {
-            String s21 = s2.substring(0, idx), s22 = s2.substring(idx);
-            if (sameHash(s21, s1.substring(0, idx))) {
-                ret = (isScramble(s1.substring(0, idx), s21) && isScramble(s1.substring(idx), s22));
-            }
-            if (ret) break;
-            if (sameHash(s21, s1.substring(len2 - idx))) {
-                ret = (isScramble(s1.substring(len2 - idx), s21) && isScramble(s1.substring(0, len2 - idx), s22));
-            }
-            if (ret) break;
+        int len = s1.length();
+        if (len != s2.length()) return false;
+        else if (len == 0) return true;
+        else if (len == 1) return s1.equals(s2);
+        for (int i = 1; i < len; i++) {
+            String s21 = s2.substring(0, i), s22 = s2.substring(i), 
+		s11 = s1.substring(0, i), s12 = s1.substring(len - i);
+            boolean ret = (sameHash(s21, s11) && isScramble(s21, s11) && isScramble(s22, s1.substring(i))) ||
+		(sameHash(s21, s12) && isScramble(s21, s12) && isScramble(s22, s1.substring(0, len - i)));
+            if (ret) return true;
         }
-        return ret;
+        
+        return false;
     }
     private boolean sameHash(String s1, String s2) {
+        if (s1.length() != s2.length()) return false;
         char arr1[] = s1.toCharArray(), arr2[] = s2.toCharArray();
         Arrays.sort(arr1);
         Arrays.sort(arr2);
-        String news1 = new String(arr1), news2 = new String(arr2);
-        return news1.equals(news2);
+        String ans1 = new String(arr1), ans2 = new String(arr2);
+        return ans1.equals(ans2);
     }
 }

@@ -186,7 +186,7 @@ Rotate List: medium
 
 Same Tree: easy
 
-Scramble String: classic, recursion & pruning
+Scramble String: hard classic, recursion & pruning
 
 Simplify Path: easy
 
