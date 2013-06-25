@@ -188,6 +188,8 @@ Same Tree: easy
 
 Scramble String: hard classic, recursion & pruning
 
+Search a 2D Matrix: binary search:
+
 Simplify Path: easy
 
 Sort Colors: Dutch National Flag Problem loop invariant
