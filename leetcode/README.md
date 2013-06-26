@@ -196,6 +196,8 @@ Search in Rotated Sorted Array: medium
 
 Search in Rotated Sorted Array II: medium
 
+Search Insert Position: easy
+
 Simplify Path: easy
 
 Sort Colors: Dutch National Flag Problem loop invariant
