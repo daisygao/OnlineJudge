@@ -190,6 +190,8 @@ Scramble String: hard classic, recursion & pruning
 
 Search a 2D Matrix: binary search:
 
+Search for a Range: recursion or twice binary search
+
 Simplify Path: easy
 
 Sort Colors: Dutch National Flag Problem loop invariant
