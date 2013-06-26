@@ -194,6 +194,8 @@ Search for a Range: recursion or twice binary search
 
 Search in Rotated Sorted Array: medium
 
+Search in Rotated Sorted Array II: medium
+
 Simplify Path: easy
 
 Sort Colors: Dutch National Flag Problem loop invariant
