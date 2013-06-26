@@ -192,6 +192,8 @@ Search a 2D Matrix: binary search:
 
 Search for a Range: recursion or twice binary search
 
+Search in Rotated Sorted Array: medium
+
 Simplify Path: easy
 
 Sort Colors: Dutch National Flag Problem loop invariant
