@@ -2,22 +2,22 @@ public class Solution {
     public String simplifyPath(String path) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        String arr[] = path.split("/");
+        String parts[] = path.split("/");
         Stack<String> st = new Stack<String>();
-        for (String s : arr) {
-            if (s.equals(".") || s.isEmpty()) {
-                //
-            } else if (s.equals("..")) {
-                if (st.size() > 0) st.pop();
+        for (String s : parts) {
+            if (s.equals("..")) {
+                if (!st.empty()) st.pop();
+            } else if (s.equals(".") || s.equals("")) {
+                // do nothing
             } else {
                 st.push(s);
             }
         }
-        if (st.empty()) return "/";
-        StringBuilder spath = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
+        if (st.empty()) sb.append("/");
         while (!st.empty()) {
-            spath.insert(0, "/" + st.pop());
+            sb.insert(0, "/" + st.pop());
         }
-        return spath.toString();
+        return sb.toString();
     }
 }

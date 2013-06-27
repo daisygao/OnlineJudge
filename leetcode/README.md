@@ -200,7 +200,7 @@ Search Insert Position: easy
 
 Set Matrix Zeroes: details...
 
-Simplify Path: easy
+Simplify Path: easy details...
 
 Sort Colors: Dutch National Flag Problem loop invariant
 
