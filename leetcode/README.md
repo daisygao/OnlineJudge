@@ -208,7 +208,7 @@ Spiral Matrix: classic
 
 Spiral Matrix II: easy
 
-Sqrt(x): easy
+Sqrt(x): Newton 
 
 String to Integer (atoi): boundary
 
