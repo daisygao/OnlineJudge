@@ -2,15 +2,16 @@ public class Solution {
     public int[][] generateMatrix(int n) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        int matrix[][] = new int[n][n];
-        int layer = n / 2, cnt = 0;
-        for (int i = 0; i < layer; i++) {
-            for (int j = i; j < n - 1 - i; j++) matrix[i][j] = ++cnt;
-            for (int j = i; j < n - 1 - i; j++) matrix[j][n - 1 - i] = ++cnt;
-            for (int j = n - 1 - i; j > i; j--) matrix[n - 1 - i][j] = ++cnt;
-            for (int j = n - 1 - i; j > i; j--) matrix[j][i] = ++cnt;
+        int layer = 0, num = 0, matrix[][] = new int[n][n];
+        for (; layer < n / 2; layer++) {
+            for (int i = layer; i < n - layer - 1; i++) matrix[layer][i] = ++num;
+            for (int i = layer; i < n - layer - 1; i++) matrix[i][n - layer - 1] = ++num;
+            for (int i = n - layer - 1; i > layer; i--) matrix[n - layer - 1][i] = ++num;
+            for (int i = n - layer - 1; i > layer; i--) matrix[i][layer] = ++num;
         }
-        if (n % 2 != 0) matrix[layer][layer] = ++cnt;
+        if (n % 2 == 1) {
+            matrix[layer][layer] = ++num;
+        }
         return matrix;
     }
 }
