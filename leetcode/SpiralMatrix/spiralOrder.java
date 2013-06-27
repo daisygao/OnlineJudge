@@ -2,27 +2,27 @@ public class Solution {
     public ArrayList<Integer> spiralOrder(int[][] matrix) {
         // Start typing your Java solution below
         // DO NOT write main() function
+        ArrayList<Integer> ans = new ArrayList<Integer>();
         int m = matrix.length;
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        if (m == 0) return list;
-        int n = matrix[0].length, len = Math.min(m, n), layer = len / 2;
-        for (int i = 0; i < layer; i++) {
-            // left -> right
-            for (int j = i; j < n - 1 - i; j++) list.add(matrix[i][j]);
-            // top -> bottom
-            for (int j = i; j < m - 1 - i; j++) list.add(matrix[j][n - 1 - i]);
-            // right -> left
-            for (int j = n - 1 - i; j > i; j--) list.add(matrix[m - 1 - i][j]);
-            // bottom -> top
-            for (int j = m - 1 - i; j > i; j--) list.add(matrix[j][i]);
+        if (m == 0) return ans;
+        int n = matrix[0].length, layer = 0;
+        for (layer = 0; layer < Math.min(m, n) / 2; layer++) {
+            // left to right
+            for (int i = layer; i < n - layer - 1; i++) ans.add(matrix[layer][i]);
+            // top to bottom
+            for (int i = layer; i < m - layer - 1; i++) ans.add(matrix[i][n - layer - 1]);
+            // right to left
+            for (int i = n - layer - 1; i > layer; i--) ans.add(matrix[m - layer - 1][i]);
+            // bottom to top
+            for (int i = m - layer - 1; i > layer; i--) ans.add(matrix[i][layer]);
         }
-        if (len % 2 != 0) {
+        if (Math.min(m, n) % 2 == 1) {
             if (m > n) {
-                for (int i = layer; i < m - layer; i++) list.add(matrix[i][layer]);
+                for (int i = layer; i < m - layer; i++) ans.add(matrix[i][layer]);
             } else {
-                for (int i = layer; i < n - layer; i++) list.add(matrix[layer][i]);
+                for (int i = layer; i < n - layer; i++) ans.add(matrix[layer][i]);
             }
         }
-        return list;
+        return ans;
     }
 }
