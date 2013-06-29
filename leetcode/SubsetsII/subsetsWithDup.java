@@ -2,33 +2,24 @@ public class Solution {
     public ArrayList<ArrayList<Integer>> subsetsWithDup(int[] num) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        Arrays.sort(num);
-        int len = num.length, idx = 0;
         ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
-        ArrayList<ArrayList<Integer>> prev = new ArrayList<ArrayList<Integer>>(), cur;
+        ArrayList<Integer> idx = new ArrayList<Integer>();
         ArrayList<Integer> list = new ArrayList<Integer>();
-        ArrayList<Integer> prevPos = new ArrayList<Integer>(), pos;
-        prev.add(list);
-        result.addAll(prev);
-        prevPos.add(-1);
-        while (prev.size() != 0) {
-            cur = new ArrayList<ArrayList<Integer>>();
-            pos = new ArrayList<Integer>();
-            for (int i = 0; i < prev.size(); i++) {
-                int lastIdx = prevPos.get(i);
-                list = prev.get(i);
-                for (int j = lastIdx + 1; j < len; j++) {
-                    ArrayList<Integer> newList = new ArrayList<Integer>(list);
-                    newList.add(num[j]);
-                    pos.add(j);
-                    cur.add(newList);
-                    while (j + 1 < len && num[j + 1] == num[j]) j++; 
-                }
+        result.add(list);
+        idx.add(-1);
+        Arrays.sort(num);
+        int cur = 0, start, len = num.length;
+        while (cur < result.size()) {
+            start = idx.get(cur) + 1;
+            for (; start < len; start++) {
+                list = new ArrayList<Integer>(result.get(cur));
+                list.add(num[start]);
+                result.add(list);
+                idx.add(start);
+                while (start + 1 < len && num[start + 1] == num[start]) start++;
             }
-            result.addAll(cur);
-            prev = cur;
-            prevPos = pos;
+            cur++;
         }
-        return result;       
+        return result;
     }
 }
