@@ -2,19 +2,17 @@ public class Solution {
     public ArrayList<ArrayList<Integer>> subsets(int[] S) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        int len = S.length;
-        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+        Arrays.sort(S);
+        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>(10000);
         ArrayList<Integer> list = new ArrayList<Integer>();
         result.add(list);
-        Arrays.sort(S);
         for (int x : S) {
-            ArrayList<ArrayList<Integer>> tmp = new ArrayList<ArrayList<Integer>>();
-            for (ArrayList<Integer> l : result) {
-                list = new ArrayList<Integer>(l);
+            int size = result.size();
+            for (int i = 0; i < size; i++) {
+                list = new ArrayList<Integer>(result.get(i));
                 list.add(x);
-                tmp.add(list);
+                result.add(list);
             }
-            result.addAll(tmp);
         }
         return result;
     }
