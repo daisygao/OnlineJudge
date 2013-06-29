@@ -16,11 +16,13 @@ public class Solution {
         helper(root, "");
         return sum;
     }
-    public void helper(TreeNode root, String pathSum) {
+    private void helper(TreeNode root, String path) {
         if (root == null) return;
-        pathSum += String.valueOf(root.val);
-        if (root.left == null && root.right == null) sum += Integer.valueOf(pathSum);
-        if (root.left != null) helper(root.left, pathSum);
-        if (root.right != null) helper(root.right, pathSum);
+        path += root.val;
+        if (root.left == null && root.right == null) {
+            sum += Integer.parseInt(path);
+        }
+        helper(root.left, path);
+        helper(root.right, path);
     }
 }
