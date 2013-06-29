@@ -1,43 +1,39 @@
 public class Solution {
-    
-    int LEN = 9;
-    int TOTAL = LEN * LEN;
-    
     public void solveSudoku(char[][] board) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        int rows[] = new int[LEN];
-        int cols[] = new int[LEN];
-        int squares[] = new int[LEN];
-        for (int i = 0; i < TOTAL; i++) {
-            int x = i / LEN, y = i % LEN, sqrIdx = (x / 3) * 3 + y / 3, mask = 1 << (board[x][y] - '0');
-            rows[x] |= mask;
-            cols[y] |= mask;
-            squares[sqrIdx] |= mask;
-        }
-        helper(board, 0, rows, cols, squares);
-    }
-    
-    private boolean helper(char[][] board, int nth, int[] rows, int[] cols, int[] squares) {
-        int x = nth / LEN, y = nth % LEN, sqrIdx = (x / 3) * 3 + y / 3;
-        if (nth >= TOTAL ||(nth == TOTAL - 1 && board[x][y] != '.')) return true;
-        else if (board[x][y] != '.') return helper(board, nth + 1, rows, cols, squares);
-        else {
-            for (int num = 1; num <= LEN; num++) {
-                int mask = 1 << num;
-                if ((rows[x] & mask) == 0 && (cols[y] & mask) == 0 && (squares[sqrIdx] & mask) == 0) {
-                    board[x][y] = (char)('0' + num);
-                    rows[x] |= mask;
-                    cols[y] |= mask;
-                    squares[sqrIdx] |= mask;
-                    if ((x == y && x == LEN - 1) || helper(board, nth + 1, rows, cols, squares)) return true;
-                    board[x][y] = '.';
-                    rows[x] &= ~mask;
-                    cols[y] &= ~mask;
-                    squares[sqrIdx] &= ~mask;
+        int rows[] = new int[9], cols[] = new int[9], cells[] = new int[9];
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                if (board[i][j] != '.') {
+                    int mark = 1 << (board[i][j] - '0');
+                    rows[i] |= mark;
+                    cols[j] |= mark;
+                    cells[(i / 3) * 3 + j / 3] |= mark;
                 }
             }
-            return false;
         }
+        solvable(board, 0, rows, cols, cells);
+    }
+   
+    private boolean solvable(char[][] board, int idx, int[] rows, int[] cols, int[] cells) {
+        if (idx == 81) return true;
+        int row = idx / 9, col = idx % 9, cell = (row / 3) * 3 + col / 3;
+        if (board[row][col] != '.') return solvable(board, idx + 1, rows, cols, cells);
+        for (char c = '1'; c <= '9'; c++) {
+            int mark = 1 << (c - '0');
+            if ((rows[row] & mark) == 0 && (cols[col] & mark) == 0 && (cells[cell] & mark) == 0) {
+                rows[row] |= mark;
+                cols[col] |= mark;
+                cells[cell] |= mark;
+                board[row][col] = c;
+                if (solvable(board, idx + 1, rows, cols, cells)) return true;
+                rows[row] &= ~mark;
+                cols[col] &= ~mark;
+                cells[cell] &= ~mark;
+                board[row][col] = '.';
+            }
+        }
+        return false;
     }
 }
