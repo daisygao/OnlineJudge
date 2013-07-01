@@ -224,7 +224,7 @@ Sum Root to Leaf Numbers: easy top-down
 
 Surrounded Regions: medium queue
 
-Swap Nodes in Pairs: easy
+Swap Nodes in Pairs: easy fake head
 
 Symmetric Tree: recursively and iteratively by using queues
 
