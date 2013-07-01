@@ -2,48 +2,26 @@ public class Solution {
     public ArrayList<String> fullJustify(String[] words, int L) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        ArrayList<String> result = new ArrayList<String>();
-        int len = words.length;
-        int curTextLen = 0, newLen;
-        int index = 0, start = 0;
-        while (index < len) {
-            newLen = (index - start) + curTextLen + words[index].length();
-            if (newLen <= L) {
-                curTextLen += words[index].length();
-            } else {
-                index--;
+        int len = words.length, start = 0, end = -1;
+        ArrayList<String> ans = new ArrayList<String>();
+        while (start < len) {
+            int wordsLen = 0;
+            StringBuilder sb = new StringBuilder();
+            while (end + 1 < len && end + 1 - start + wordsLen + words[end + 1].length() <= L) {
+                wordsLen += words[++end].length();
             }
-            if (newLen >= L || index == len - 1) {                
-                result.add(getJustifiedLine(words, start, index, L - curTextLen));
-                start = index + 1;
-                curTextLen = 0;
+            int space = L - wordsLen, slot;
+            for (int i = start; i <= end; i++) {
+                sb.append(words[i]);
+                slot = end == i ? space : (end == len - 1 ? 1 : (int)Math.ceil(1.0 * space / (end - i)));
+                for (int j = 0; j < slot; j++) {
+                    sb.append(" ");
+                }
+                space -= slot;
             }
-            index++;
+            ans.add(sb.toString());
+            start = end + 1;
         }
-        return result;
-    }
-    private String getJustifiedLine(String[] words, int head, int tail, int spaceTotalLen) {
-        String result = "";  
-        while (head <= tail) {
-            result += words[head];
-            int spaceCnt = tail - head;
-            int spaceLen = 1;
-            if (head == tail) {
-                spaceLen = spaceTotalLen;
-            } else if (tail != words.length - 1) {
-                spaceLen = (int)Math.ceil(1.0 * spaceTotalLen / spaceCnt); 
-            }
-            result += getSpaceString(spaceLen);
-            head++;
-            spaceTotalLen -= spaceLen;
-        }
-        return result;
-    }
-    private String getSpaceString(int count) {
-        String result = "";
-        for (int i = 0; i < count; i++) {
-            result += " ";
-        }
-        return result;
+        return ans;
     }
 }
