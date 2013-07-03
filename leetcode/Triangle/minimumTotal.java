@@ -2,28 +2,19 @@ public class Solution {
     public int minimumTotal(ArrayList<ArrayList<Integer>> triangle) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        int size = triangle.size(), result = 0, width;
-        if (size == 0) return 0;
-        int sols[] = new int[size];
-        ArrayList<Integer> list;
-        for (int i = 0; i < size; i++) {
-            list = triangle.get(i);
-            width = list.size();
-            for (int j = width - 1; j >= 0; j--) {
-                int tmp = 0;
-                if (j == 0) {
-                    tmp = sols[j];
-                } else if (j == width - 1) {
-                    tmp = sols[j - 1];
-                } else {
-                    tmp = Math.min(sols[j - 1], sols[j]);
-                }
-                sols[j] = list.get(j) + tmp;
-                if (i == size - 1) {
-                    result = j == width - 1 ? sols[j] : (Math.min(result, sols[j]));
-                }
+        int n = triangle.size(), ans = 0, sols[] = new int[n];
+        for (ArrayList<Integer> list : triangle) {
+            ans = Integer.MAX_VALUE;
+            for (int i = list.size() - 1; i >= 0; i--) {
+                int prev = 0;
+                if (i == list.size() -1 && i == 0) prev = 0;
+                else if (i == list.size() - 1) prev = sols[i - 1];
+                else if (i == 0) prev = sols[i];
+                else prev = Math.min(sols[i - 1], sols[i]);
+                sols[i] = list.get(i) + prev;
+                ans = Math.min(sols[i], ans);
             }
         }
-        return result;
+        return ans;
     }
 }
