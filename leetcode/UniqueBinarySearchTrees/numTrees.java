@@ -2,17 +2,13 @@ public class Solution {
     public int numTrees(int n) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        int sol[] = new int[n + 1];
-        if (n <= 2) return n;
-        sol[0] = sol[1] = 1;
-        sol[2] = 2;
-        int i, j;
-        for (i = 3; i <= n; i++) {
-            for (j = 0; j < i / 2; j++) {
-                sol[i] += 2 * (sol[j] * sol[i - j - 1]);
+        int sols[] = new int[n + 1];
+        sols[0] = 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                sols[i] += sols[i - j] * sols[j - 1];
             }
-            if (i % 2 == 1) sol[i] += sol[j] * sol[i - j - 1];
-        } 
-        return sol[n];
+        }
+        return sols[n];
     }
 }

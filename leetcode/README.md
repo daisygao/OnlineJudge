@@ -236,6 +236,8 @@ Triangle: DP O(n^2)
 
 Two Sum: medium 
 
+Unique Binary Search Trees: DP
+
 Valid Palindrome: easy
 
 Word Ladder: medium
