@@ -238,6 +238,8 @@ Two Sum: medium
 
 Unique Binary Search Trees: DP
 
+Unique Binary Search Trees II: recursion
+
 Valid Palindrome: easy
 
 Word Ladder: medium
