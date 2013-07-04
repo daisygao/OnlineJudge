@@ -240,6 +240,8 @@ Unique Binary Search Trees: DP
 
 Unique Binary Search Trees II: recursion
 
+Unique Paths: DP
+
 Valid Palindrome: easy
 
 Word Ladder: medium
