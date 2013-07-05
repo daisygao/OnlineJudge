@@ -246,6 +246,8 @@ Unique Paths II: DP
 
 Valid Palindrome: easy
 
+Valid Parentheses: easy
+
 Word Ladder: medium
 
 Word Ladder II: hard (HashSet ArrayList add remove time)
