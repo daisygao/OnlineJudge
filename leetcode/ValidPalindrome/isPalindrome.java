@@ -4,13 +4,14 @@ public class Solution {
         // DO NOT write main() function
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if (Character.isLetterOrDigit(c)) sb.append(Character.toLowerCase(c));
+            if (Character.isLetterOrDigit(s.charAt(i))) {
+                sb.append(Character.toLowerCase(s.charAt(i)));
+            }
         }
-        String newStr = sb.toString();
-        int newLen = newStr.length();
-        for (int i = 0; i < newLen / 2; i++) {
-            if (newStr.charAt(i) != newStr.charAt(newLen - 1 - i)) return false;
+        s = sb.toString();
+        int len = s.length();
+        for (int i = 0; i < len / 2; i++) {
+            if (s.charAt(i) != s.charAt(len - 1 - i)) return false;
         }
         return true;
     }
