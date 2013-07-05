@@ -248,6 +248,8 @@ Valid Palindrome: easy
 
 Valid Parentheses: easy
 
+Valid Sudoku: easy
+
 Word Ladder: medium
 
 Word Ladder II: hard (HashSet ArrayList add remove time)
