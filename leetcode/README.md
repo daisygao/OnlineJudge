@@ -242,6 +242,8 @@ Unique Binary Search Trees II: recursion
 
 Unique Paths: DP
 
+Unique Paths II: DP
+
 Valid Palindrome: easy
 
 Word Ladder: medium
