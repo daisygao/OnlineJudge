@@ -252,6 +252,8 @@ Valid Sudoku: easy
 
 Validate Binary Search Tree: hard
 
+Wildcard Matching: hard
+
 Word Ladder: medium
 
 Word Ladder II: hard (HashSet ArrayList add remove time)
