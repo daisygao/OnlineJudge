@@ -250,6 +250,8 @@ Valid Parentheses: easy
 
 Valid Sudoku: easy
 
+Validate Binary Search Tree: hard
+
 Word Ladder: medium
 
 Word Ladder II: hard (HashSet ArrayList add remove time)
