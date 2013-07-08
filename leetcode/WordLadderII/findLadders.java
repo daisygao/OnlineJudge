@@ -26,7 +26,7 @@ public class Solution {
                             queue.add(v);
                         }
                     }
-                    if (v.equals(end)) {
+                    if (v.equals(end) && (!u.equals(start) || dict.contains(start) || dict.contains(end))) {
                         min = dist.get(u) + 1;
                     }
                 }
