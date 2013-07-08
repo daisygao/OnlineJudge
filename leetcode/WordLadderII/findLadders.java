@@ -1,60 +1,54 @@
-
 public class Solution {
-    public ArrayList<ArrayList<String>> findLadders(String start, String end, HashSet<String> dict) {
+      public ArrayList<ArrayList<String>> findLadders(String start, String end, HashSet<String> dict) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        dict.remove(start);
-        dict.remove(end);
-        HashMap<String, Integer> distmap = new HashMap<String, Integer>();
+        ArrayList<String> queue = new ArrayList<String>();
+        HashMap<String, Integer> dist = new HashMap<String, Integer>();
         HashMap<String, ArrayList<String>> parent = new HashMap<String, ArrayList<String>>();
-        LinkedList<String> active = new LinkedList<String>();
-        int dist = 0, idx = 0, wlen = start.length(), minDist = Integer.MAX_VALUE;
-        active.add(start);
-        distmap.put(start,dist);
-        while (idx < active.size()) {
-            String v = active.get(idx);
-            dist = distmap.get(v);
-            if (dist >= minDist) break;
-            char varr[] = v.toCharArray();
-            for (int i = 0; i < wlen; i++) {
-                char tmp = varr[i];
-                for (char j = 'a'; j <= 'z'; j++) {
-                    if (j == tmp) continue;
-                    varr[i] = j;
-                    String u = new String(varr);
-                    if (dict.contains(u) || u.equals(end)) {
-                        if (parent.containsKey(u) && distmap.get(u) == dist + 1) {
-                            parent.get(u).add(v);
-                        } else if (!parent.containsKey(u)) {
-                            ArrayList<String> plist = new ArrayList<String>();
-                            plist.add(v);
-                            parent.put(u, plist);
-                            distmap.put(u, dist + 1);
-                            active.add(u);
+        queue.add(start);
+        dist.put(start, 1);
+        int idx = 0, min = Integer.MAX_VALUE;
+        while (idx < queue.size()) {
+            String u = queue.get(idx);
+            if (dist.get(u) >= min) break;
+            for (int i = 0; i < u.length(); i++) {
+                for (char c = 'a'; c <= 'z'; c++) {
+                    if (c == u.charAt(i)) continue;
+                    StringBuilder sb = new StringBuilder(u);
+                    sb.setCharAt(i, c);
+                    String v = sb.toString();
+                    if (dict.contains(v) && (!dist.containsKey(v) || dist.get(v) == dist.get(u) + 1)) {
+                        ArrayList<String> list = dist.containsKey(v) ? parent.get(v) : new ArrayList<String>();
+                        list.add(u);
+                        parent.put(v, list);
+                        if (!dist.containsKey(v)) {
+                            dist.put(v, dist.get(u) + 1);
+                            queue.add(v);
                         }
-                        if (u.equals(end)) minDist = dist + 1;
+                    }
+                    if (v.equals(end)) {
+                        min = dist.get(u) + 1;
                     }
                 }
-                varr[i] = tmp;
             }
             idx++;
         }
-        return printPaths(end, parent, distmap);
+        return genPaths(end, parent, start);
     }
-    ArrayList<ArrayList<String>> printPaths(String u, HashMap<String, ArrayList<String>> pa, HashMap<String, Integer> dist) {
-        ArrayList<ArrayList<String>> result = new ArrayList<ArrayList<String>>();
-        if (pa.containsKey(u)) {
-            for (String p : pa.get(u)) {
-                for (ArrayList<String> list : printPaths(p, pa, dist)) {
+    private ArrayList<ArrayList<String>> genPaths(String u, HashMap<String, ArrayList<String>> parent, String start) {
+        ArrayList<ArrayList<String>> ans = new ArrayList<ArrayList<String>>();
+        if (parent.containsKey(u)) {
+            for (String v : parent.get(u)) {
+                for (ArrayList<String> list : genPaths(v, parent, start)) {
                     list.add(u);
-                    result.add(list);
+                    ans.add(list);
                 }
             }
-        } else if (dist.containsKey(u)) {
+        } else if (u.equals(start)) {
             ArrayList<String> list = new ArrayList<String>();
-            list.add(u);
-            result.add(list);
+            list.add(start);
+            ans.add(list);
         }
-        return result;
+        return ans;
     }
 }
