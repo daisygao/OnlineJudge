@@ -250,7 +250,7 @@ Valid Parentheses: easy
 
 Valid Sudoku: easy
 
-Validate Binary Search Tree: hard
+Validate Binary Search Tree ※: hard
 
 Wildcard Matching: hard
 
