@@ -2,33 +2,29 @@ public class Solution {
     public int ladderLength(String start, String end, HashSet<String> dict) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        dict.remove(start);
-        dict.remove(end);
-        if (dict.isEmpty()) return 0;
-        ArrayList<String> active = new ArrayList<String>(), next = new ArrayList<String>();
-        int dist = 0;
-        active.add(start);
-        while (!active.isEmpty() || !next.isEmpty()) {
-            if (active.isEmpty()) {
-                active.addAll(next);
-                next.clear();
-                dist++;
-            }
-            String current = active.remove(0);
-            char arr[] = current.toCharArray();
-            for (int i = 0; i < arr.length; i++) {
-                char tmp = arr[i];
-                for (char j = 'a'; j < 'z'; j++) {
-                    if (arr[i] == j) continue;
-                    arr[i] = j;
-                    String future = new String(arr);
-                    if (dict.contains(future)) {
-                        next.add(future);
-                        dict.remove(future);
-                    } else if (future.equals(end)) return dist + 2;
+        int idx = 0;
+        ArrayList<String> queue = new ArrayList<String>(dict.size());
+        HashMap<String, Integer> path = new HashMap<String, Integer>();
+        queue.add(start);
+        path.put(start, 1);
+        while (idx < queue.size()) {
+            String u = queue.get(idx);
+            for (int i = 0; i < u.length(); i++) { 
+                for (char c = 'a'; c <= 'z'; c++) {
+                    if (c == u.charAt(i)) continue;
+                    StringBuilder sb = new StringBuilder(u);
+                    sb.setCharAt(i, c);
+                    String v = sb.toString();
+                    if (dict.contains(v) && !path.containsKey(v)) {
+                        path.put(v, path.get(u) + 1);
+                        queue.add(v);
+                    }
+                    if (v.equals(end)) {
+                        return path.get(u) + 1;
+                    }
                 }
-                arr[i] = tmp;
-            }
+            }            
+            idx++;
         }
         return 0;
     }
