@@ -256,4 +256,4 @@ Wildcard Matching: hard
 
 Word Ladder: medium
 
-Word Ladder II: hard (HashSet ArrayList add remove time)
+Word Ladder II: medium 
