@@ -1,3 +1,4 @@
 My codes for online judge platforms.
 
-leetcode
+[leetcode](http://leetcode.com/onlinejudge)
+[POJ](http://poj.org/)
