@@ -1,14 +1,6 @@
+import java.io.*;
 import java.util.*;
-
-/**
- *
- * @author gaoyuan.gy
- */
 public class Main {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
         while (cin.hasNext()) {
