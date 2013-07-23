@@ -2,19 +2,17 @@ public class Solution {
     public int minCut(String s) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        int len = s.length();
+        int len = s.length(), sols[] = new int[len + 1];
         boolean isPalin[][] = new boolean[len][len];
-        int sol[] = new int [len + 1];
-        for (int i = len; i >= 0; i--) {
-            sol[i] = len - 1 - i;
-            if (i == len) continue;
+        for (int i = 0; i <= len; i++) sols[i] = len - 1 - i;
+        for (int i = len - 1; i >= 0; i--) {
             for (int j = i; j < len; j++) {
-                if (s.charAt(i) == s.charAt(j) && (j - i <= 2 || isPalin[i + 1][j - 1])) {
+                if (s.charAt(i) == s.charAt(j) && (j - i < 3 || isPalin[i + 1][j - 1])) {
                     isPalin[i][j] = true;
-                    sol[i] = Math.min(sol[i], 1 + sol[j + 1]);
+                    sols[i] = Math.min(sols[i], 1 + sols[j + 1]);
                 }
             }
         }
-        return sol[0];
+        return sols[0];
     }
 }
