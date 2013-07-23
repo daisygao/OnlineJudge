@@ -14,7 +14,7 @@ private ArrayList<ArrayList<Integer>> helper(int start, int end, int sum) {
 		if (i > sum) break;
 		if (i == sum) {
 			ArrayList<Integer> list = new ArrayList<Integer>();
-            list.add(i);
+			list.add(i);
 			ans.add(list);
 			break;
 		}
