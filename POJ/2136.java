@@ -17,7 +17,7 @@ public class Main {
 		for (int i = max; i >= 0; i--) {
 			for (char c = 'A'; c <= 'Z'; c++) {
 				char output = i == 0 ? c : (cnt[c - 'A'] >= i ? '*' : ' ');
-                System.out.print(output);
+				System.out.print(output);
 				if (c != 'Z') System.out.print(" ");
 			}
 			System.out.println();
