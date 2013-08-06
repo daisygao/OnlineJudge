@@ -25,5 +25,6 @@ public int[] match(int[][] w, int[] order) {
 		}	
 		len /= 2;
 	}
+	result[0] = order[0];
 	return result;
 }
