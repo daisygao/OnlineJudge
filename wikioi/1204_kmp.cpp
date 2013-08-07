@@ -26,7 +26,7 @@ int main() {
         } else if (pidx == 0) {
             sidx++;
         } else {
-        	pidx = pos[pidx - 1];
+            pidx = pos[pidx - 1];
         }
         if (pidx == plen) break;
     }
