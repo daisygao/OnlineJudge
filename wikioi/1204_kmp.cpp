@@ -15,7 +15,7 @@ void calcPos(string pat, int* arr) {
     }
 }
 int main() {
-	string s, pat;
+    string s, pat;
     cin >> s >> pat;
     int slen = s.length(), plen = pat.length(), *pos = new int[plen], sidx = 0, pidx = 0;
     calcPos(pat, pos);
