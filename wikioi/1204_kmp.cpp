@@ -28,9 +28,8 @@ int main() {
         } else {
             pidx = pos[pidx - 1];
         }
-        if (pidx == plen) break;
+        if (pidx == plen) cout << sidx - plen + 1;
     }
     delete [] pos;
-    cout << (pidx == plen ? (sidx - plen + 1) : 0);
     return 0;
 }
