@@ -17,3 +17,7 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1204 strstr
 
 1205 reverse sentence
+
+====通过初赛====
+
+1075 set
