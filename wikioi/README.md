@@ -13,3 +13,7 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1206
 
 2235
+
+1204 strstr
+
+1205 reverse sentence
