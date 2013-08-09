@@ -21,5 +21,7 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 ====通过初赛====
 
 1075 set
+
 1076 quick sort
+
 1083 Cantor table
