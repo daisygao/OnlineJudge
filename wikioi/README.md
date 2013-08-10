@@ -25,3 +25,5 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1076 quick sort
 
 1083 Cantor table
+
+1160 matrix index computation
