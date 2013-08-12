@@ -39,3 +39,5 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1475 m进制转10进制
 
 1011 数的计算 dp / recursion
+
+1978 Fibonacci
