@@ -31,3 +31,5 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1012 gcd
 
 1212 gcd
+
+1430 isPrime
