@@ -33,3 +33,8 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1212 gcd
 
 1430 isPrime
+
+1474 十进制转m进制
+
+1475 m进制转10进制
+
