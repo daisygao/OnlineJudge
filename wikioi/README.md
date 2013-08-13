@@ -41,3 +41,7 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1011 数的计算 dp / recursion
 
 1978 Fibonacci
+
+1842 simplest recursion
+
+3038 simplest recursion
