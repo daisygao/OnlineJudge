@@ -45,3 +45,9 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1842 simplest recursion
 
 3038 simplest recursion
+
+1501 dfs
+
+3143 traverse BST
+
+3145 recursion
