@@ -7,7 +7,7 @@ solution: greedy
 pick the earliest end
 
 1s 2s 3e 3s 5e 6e
-find first end with start bigger or equal to 0, second end with start bigger or equal to first end
+find first end with start bigger or equal to INT_MIN, second end with start bigger or equal to first end
 */
 #include <cstdio>
 #include <algorithm>
@@ -28,7 +28,6 @@ int main() {
         int x, y;
         scanf("%d %d", &x, &y);
         arr[i] = {min(x, y), max(x, y)};
-        t = min(t, arr[i].start);
     }
     sort(arr, arr + n);
     int ans = 0;
