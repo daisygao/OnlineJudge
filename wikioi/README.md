@@ -55,3 +55,6 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 ====普及一等====
 
 1098 greedy
+
+1214 greedy + c++ sort struct arry
+
