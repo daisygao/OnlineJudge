@@ -51,3 +51,7 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 3143 traverse BST
 
 3145 recursion
+
+====普及一等====
+
+1098 greedy
