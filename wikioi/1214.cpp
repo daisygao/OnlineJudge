@@ -21,7 +21,7 @@ struct Time {
     }
 };
 int main() {
-    int n, t = INT_MIN;
+    int n;
     scanf("%d", &n);
     Time arr[n];
     for (int i = 0; i < n; i++) {
@@ -30,7 +30,7 @@ int main() {
         arr[i] = {min(x, y), max(x, y)};
     }
     sort(arr, arr + n);
-    int ans = 0;
+    int ans = 0, t = INT_MIN;
     for (int i = 0; i < n; i++) {
         if (arr[i].start >= t) {
             ans++;
@@ -40,3 +40,4 @@ int main() {
     printf("%d", ans);
     return 0;
 }
+    
