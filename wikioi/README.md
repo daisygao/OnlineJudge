@@ -58,4 +58,6 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 
 1214 greedy + c++ sort struct arry
 
+3115 high precision minus
+
 3116 high-precision
