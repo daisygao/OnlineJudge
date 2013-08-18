@@ -60,4 +60,6 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 
 3115 high precision minus
 
-3116 high-precision
+3116 high precision add
+
+3117 high precision multiply
