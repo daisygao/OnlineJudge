@@ -9,7 +9,6 @@
 一个整数，表示箱子剩余空间。
 */
 #include <cstdio>
-#include <climits>
 int min(int x, int y) {return x < y ? x : y;}
 int main() {
     int n, m;
