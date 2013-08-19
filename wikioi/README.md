@@ -63,3 +63,5 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 3116 high precision add
 
 3117 high precision multiply
+
+1014 0-1 backpack problem one-dimensional DP
