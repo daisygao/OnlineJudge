@@ -65,3 +65,5 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 3117 high precision multiply
 
 1014 0-1 backpack problem one-dimensional DP
+
+1068 4-dimentional DP *  traverse all your resources
