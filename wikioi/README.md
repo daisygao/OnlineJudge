@@ -74,4 +74,6 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 
 3027 value DP
 
-1048 * interval DP traverse length from 1 to n
+1048 * interval DP : traverse length from 1 to n
+
+1154 * loop DP
