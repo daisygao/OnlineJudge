@@ -73,3 +73,5 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1044 * non-asc/desc seq 
 
 3027 value DP
+
+1048 * interval DP traverse length from 1 to n
