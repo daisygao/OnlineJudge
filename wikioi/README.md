@@ -66,6 +66,8 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 
 1014 0-1 backpack problem one-dimensional DP
 
-1068 4-dimentional DP *  traverse all your resources
+1068 * 4-dimentional DP  traverse all your resources
 
 1576 non-decreasing sequence DP or stack
+
+1044 * non-asc/desc seq 
