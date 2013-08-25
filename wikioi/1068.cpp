@@ -10,8 +10,7 @@
 
 输出描述 Output Description
 输出一行一个整数
-S
-olution:
+Solution:
 sols[i, j, k, l] = max(sols[i - 1, j, k, l], sols...) + score[i + j * 2 + k * 3 + l * 4]
 
 Test:
