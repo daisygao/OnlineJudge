@@ -71,3 +71,5 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1576 non-decreasing sequence DP or stack
 
 1044 * non-asc/desc seq 
+
+3027 value DP
