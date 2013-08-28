@@ -1,4 +1,4 @@
-My codes for online judge platforms.
+My codes for online judging platforms.
 
 [leetcode](http://leetcode.com/onlinejudge)
 
