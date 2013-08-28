@@ -15,7 +15,6 @@
 输出描述 Output Description
 输出 仅包含1 行，为一个整数，即输入矩阵取数后的最大得分。
 Solutions:
-
 a1...am
 b1...bm
 c1...cm
