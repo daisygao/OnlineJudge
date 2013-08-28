@@ -77,3 +77,5 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1048 * interval DP : traverse length from 1 to n
 
 1154 * loop DP
+
+1166 * high precision & interval DP : traverse length from 1 to m
