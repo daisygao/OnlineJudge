@@ -79,3 +79,5 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1154 * loop DP
 
 1166 * high precision & interval DP : traverse length from 1 to m
+
+1010 chessboard DP (2D or 1D)
