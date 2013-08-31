@@ -16,7 +16,6 @@ sols[i] maximum length of non-desc seq ending with i
 sols[i] = max(sols[j] + 1) 
 */
 #include <cstdio>
-#include <cstring>
 int max(int x, int y) {return x > y ? x : y;}
 int main() {
     int n;
