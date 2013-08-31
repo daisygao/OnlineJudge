@@ -83,3 +83,5 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1010 chessboard DP (2D or 1D)
 
 1017 partition DP (1D: traverse cut number)
+
+1116 DFS
