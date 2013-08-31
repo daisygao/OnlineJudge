@@ -13,7 +13,7 @@
 
 Solution:
 sols[i] maximum length of non-desc seq ending with i
-sols[i] = max(sols[j] + 1) 
+sols[i] = max(sols[j] + 1, aj < ai) 
 */
 #include <cstdio>
 int max(int x, int y) {return x > y ? x : y;}
