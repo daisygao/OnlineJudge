@@ -12,9 +12,8 @@
 输出K的极大值，即最长严格上升子序列的长度
 
 Solution:
-sols[n] maximum length of increasing seq until index n
-Test:
-2 3 4 1 4 5 20 49 2 4 52 1 2 4
+sols[i] maximum length of non-desc seq ending with i
+sols[i] = max(sols[j] + 1) 
 */
 #include <cstdio>
 #include <cstring>
@@ -23,16 +22,17 @@ int main() {
     int n;
     scanf("%d", &n);
     int arr[n], sols[n], ans = 0;
-    memset(sols, 0, sizeof(sols) / sizeof(char));
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
+        sols[i] = 1;
         for (int j = i - 1; j >= 0; j--) {
-            if (arr[j] > arr[i]) break;
-            sols[i] = max(sols[i], sols[j]);
+            if (arr[j] <= arr[i]) {
+                sols[i] = max(sols[i], sols[j] + 1);
+            }
         }
-        sols[i] += 1;
-        ans = max(sols[i], ans);
+        ans = max(ans, sols[i]);
     }
     printf("%d", ans);
     return 0;
 }
+
