@@ -26,7 +26,7 @@ int main() {
         scanf("%d", &arr[i]);
         sols[i] = 1;
         for (int j = i - 1; j >= 0; j--) {
-            if (arr[j] <= arr[i]) {
+            if (arr[j] < arr[i]) {
                 sols[i] = max(sols[i], sols[j] + 1);
             }
         }
