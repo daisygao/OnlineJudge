@@ -85,3 +85,5 @@ My solutions to [wikioi](http://wikioi.com/) online judging platform.
 1017 partition DP (1D: traverse cut number)
 
 1116 DFS
+
+1099 BFS
