@@ -254,7 +254,7 @@ Validate Binary Search Tree ※: hard
 
 Wildcard Matching: hard
 
-Word Ladder: medium
+Word Ladder: BFS using queue and HashMap 
 
 Word Ladder II: medium 
 
