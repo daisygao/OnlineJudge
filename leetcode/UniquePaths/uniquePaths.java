@@ -1,14 +1,16 @@
+/*
+sols[i][j] = sols[i - 1][j] + sols[i][j - 1];
+*/
 public class Solution {
     public int uniquePaths(int m, int n) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        int sols[][] = new int[m][n];
+        int sols[] = new int[n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (i == 0 && j == 0) sols[i][j] = 1;
-                else sols[i][j] = (j == 0 ? 0 : sols[i][j - 1]) + (i == 0 ? 0 : sols[i - 1][j]);
+                sols[j] += (j == 0 ? (i == 0 ? 1 : 0) : sols[j - 1]);
             }
         }
-        return sols[m - 1][n - 1];
+        return sols[n - 1];
     }
 }
