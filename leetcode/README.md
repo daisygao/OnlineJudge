@@ -240,7 +240,7 @@ Unique Binary Search Trees: DP
 
 Unique Binary Search Trees II: recursion
 
-Unique Paths: DP
+Unique Paths: DP 1d
 
 Unique Paths II: DP
 
