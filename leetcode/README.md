@@ -242,7 +242,7 @@ Unique Binary Search Trees II: recursion
 
 Unique Paths: DP 1d
 
-Unique Paths II: DP
+Unique Paths II: DP 1d
 
 Valid Palindrome: easy
 
