@@ -2,16 +2,15 @@ public class Solution {
     public boolean isPalindrome(String s) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < s.length(); i++) {
-            if (Character.isLetterOrDigit(s.charAt(i))) {
-                sb.append(Character.toLowerCase(s.charAt(i)));
+        int i = 0, j = s.length() - 1;
+        while (i < j) {
+            if (!Character.isLetterOrDigit(s.charAt(i))) {
+                i++;
+            } else if (!Character.isLetterOrDigit(s.charAt(j))) {
+                j--;
+            } else {
+                if (Character.toLowerCase(s.charAt(i++)) != Character.toLowerCase(s.charAt(j--))) return false;
             }
-        }
-        s = sb.toString();
-        int len = s.length();
-        for (int i = 0; i < len / 2; i++) {
-            if (s.charAt(i) != s.charAt(len - 1 - i)) return false;
         }
         return true;
     }
