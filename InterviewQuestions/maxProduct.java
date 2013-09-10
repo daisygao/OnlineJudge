@@ -1,7 +1,7 @@
 /*
 一个正整数N，拆分成若干个数之和，这若干个数的乘积最大，怎么拆。
 Solutions:
-sols[n] max product of n
+sols[n] max product by splitting n
 sols[n] = k: k * Math.max(n - k, sols[n - k])
 */
 public int maxProduct(int N) {
