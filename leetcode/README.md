@@ -16,7 +16,7 @@ Balanced Binary Tree: easy
 
 Best Time to Buy and Sell Stock: easy
 
-Best Time to Buy and Sell Stock II: medium
+Best Time to Buy and Sell Stock II: easy inflection point 
 
 Best Time to Buy and Sell Stock III: DP
 
