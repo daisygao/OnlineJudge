@@ -2,24 +2,17 @@ public class Solution {
     public boolean search(int[] A, int target) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        int len = A.length, low = 0, high = len - 1, mid;
-        while (low <= high) {
-            mid = low + (high - low) / 2;
-            if (A[mid] == target) return true;
-            if (A[low] < A[mid]) {
-                if (A[low] <= target && target < A[mid]) {
-                    high = mid - 1;
-                } else {
-                    low = mid + 1;
-                }
-            } else if (A[low] > A[mid]) {
-                if (A[mid] < target && target <= A[high]) {
-                    low = mid + 1;
-                } else {
-                    high = mid - 1;
-                }
+        int l = 0, r = A.length - 1, m;
+        while (l <= r) {
+            m = l + (r - l >> 1);
+            if (target == A[m]) return true;
+            else if (A[l] == A[m]) l++;
+            else if (A[l] < A[m]) {
+                if (target >= A[l] && target < A[m]) r = m - 1;
+                else l = m + 1;
             } else {
-                low++;
+                if (target > A[m] && target <= A[r]) l = m + 1;
+                else r = m - 1;
             }
         }
         return false;
