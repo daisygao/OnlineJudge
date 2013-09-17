@@ -234,7 +234,7 @@ Trapping Rain Water: double-way DP O(n)
 
 Triangle: DP O(n^2)
 
-Two Sum: medium 
+Two Sum: hash / quicksort + binary 
 
 Unique Binary Search Trees: DP
 
