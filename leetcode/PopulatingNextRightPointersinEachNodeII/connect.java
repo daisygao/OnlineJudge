@@ -11,14 +11,13 @@ public class Solution {
         // Start typing your Java solution below
         // DO NOT write main() function
         if (root == null) return;
-        if (root.left != null && root.right != null) {
-            root.left.next = root.right;
-        }
-        TreeLinkNode p = root.next, next;
-        while (p != null && p.left == null && p.right == null) p = p.next;
-        next = p == null ? null : (p.left == null ? p.right : p.left);
+        else if (root.left == null && root.right == null) return;
+        else if (root.left != null && root.right != null) root.left.next = root.right;
+        TreeLinkNode next = root.next;
+        while (next != null && next.left == null && next.right == null) next = next.next;
+        if (next != null) next = (next.left != null) ? next.left : next.right;
         if (root.right != null) root.right.next = next;
-        else if (root.left != null) root.left.next = next;
+        else root.left.next = next;
         connect(root.right);
         connect(root.left);
     }

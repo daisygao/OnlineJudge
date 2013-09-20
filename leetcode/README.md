@@ -150,7 +150,7 @@ Plus One: easy find the last 9 seq
 
 Populating Next Right Pointers in Each Node: easy
 
-Populating Next Right Pointers in Each Node II: medium 
+Populating Next Right Pointers in Each Node II: easy from right to left 
 
 Pow(x, n): tricky Integer boundary
 
