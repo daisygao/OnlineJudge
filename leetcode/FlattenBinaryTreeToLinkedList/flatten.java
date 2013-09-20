@@ -14,13 +14,12 @@ public class Solution {
         if (root == null) return;
         flatten(root.left);
         flatten(root.right);
-        TreeNode right = root.right;
-        root.right = root.left;
-        root.left = null;
-        TreeNode p = root;
-        while (p.right != null) {
-            p = p.right;
+        TreeNode last = root.left;
+        while (last != null && last.right != null) last = last.right;
+        if (last != null) {
+            last.right = root.right;
+            root.right = root.left;
+            root.left = null;
         }
-        p.right = right;
     }
 }
