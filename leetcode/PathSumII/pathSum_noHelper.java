@@ -11,25 +11,23 @@ public class Solution {
     public ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>(1000);
-        if (root == null) return result;
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<ArrayList<Integer>>();
+        if (root == null) return ans;
         sum -= root.val;
-        if (root.left == null && root.right == null) {
-            if (sum == 0) {
-                ArrayList<Integer> list = new ArrayList<Integer>();
-                list.add(root.val);
-                result.add(list);               
-            }
+        if (root.left == null && root.right == null && sum == 0) {
+            ArrayList<Integer> list = new ArrayList<Integer>();
+            list.add(root.val);
+            ans.add(list);
         } else {
             for (ArrayList<Integer> list : pathSum(root.left, sum)) {
                 list.add(0, root.val);
-                result.add(list);
+                ans.add(list);
             }
             for (ArrayList<Integer> list : pathSum(root.right, sum)) {
                 list.add(0, root.val);
-                result.add(list);
+                ans.add(list);
             }
         }
-        return result;
+        return ans;
     }
 }
