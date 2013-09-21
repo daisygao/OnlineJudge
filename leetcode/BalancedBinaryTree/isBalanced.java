@@ -8,19 +8,11 @@
  * }
  */
 public class Solution {
-    public boolean isBalanced(TreeNode root) {
+    public int minDepth(TreeNode root) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        return balanceHelper(root) == -1 ? false : true;
-    }
-    
-    private int balanceHelper(TreeNode root) {
         if (root == null) return 0;
-        int leftHeight = balanceHelper(root.left);
-        if (leftHeight == -1) return -1;
-        int rightHeight = balanceHelper(root.right);
-        if (rightHeight == -1) return -1;
-        if (Math.abs(leftHeight - rightHeight) < 2) return 1 + Math.max(leftHeight, rightHeight);
-        else return -1;
+        int left = minDepth(root.left), right = minDepth(root.right);
+        return 1 + (root.left != null && root.right != null ? Math.min(left, right) : Math.max(left, right));
     }
 }
