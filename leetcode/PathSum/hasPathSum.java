@@ -12,8 +12,8 @@ public class Solution {
         // Start typing your Java solution below
         // DO NOT write main() function
         if (root == null) return false;
-        int x = sum - root.val;
-        if (root.left == null && root.right == null) return x == 0;
-        return hasPathSum(root.left, x) || hasPathSum(root.right, x);
+        sum -= root.val;
+        if (root.left == null && root.right == null && sum == 0) return true;
+        return hasPathSum(root.left, sum) || hasPathSum(root.right, sum);
     }
 }
