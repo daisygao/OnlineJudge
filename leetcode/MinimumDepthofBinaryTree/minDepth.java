@@ -12,10 +12,7 @@ public class Solution {
         // Start typing your Java solution below
         // DO NOT write main() function
         if (root == null) return 0;
-        if (root.left == null && root.right == null) return 1;
-        int min = Integer.MAX_VALUE;
-        if (root.left != null) min = minDepth(root.left);
-        if (root.right != null) min = Math.min(min, minDepth(root.right));
-        return 1 + min;
+        int left = minDepth(root.left), right = minDepth(root.right);
+        return 1 + (root.left != null && root.right != null ? Math.min(left, right) : Math.max(left, right));
     }
 }
