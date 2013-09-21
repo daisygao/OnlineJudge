@@ -16,30 +16,28 @@
  * }
  */
 public class Solution {
-    ListNode p;
+    ListNode ld;
     public TreeNode sortedListToBST(ListNode head) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        int len = 0;
-        p = head;
-        while (p != null) {
-            p = p.next;
-            len++;
+        int n = 0;
+        ld = head;
+        while (ld != null) {
+            ld = ld.next;
+            n++;
         }
-        p = head;
-        return helper(0, len);
+        ld = head;
+        return helper(0, n);
     }
     private TreeNode helper(int start, int end) {
-        if (start >= end || p == null) return null;
-        int mid = start + (end - start) / 2;
+        if (start == end) return null;
+        int mid = start + (end - start >> 1);
         TreeNode left = helper(start, mid);
-        TreeNode root = new TreeNode(p.val);
-        p = p.next;
+        TreeNode root = new TreeNode(ld.val);
+        ld = ld.next;
         TreeNode right = helper(mid + 1, end);
         root.left = left;
         root.right = right;
         return root;
-        
-        
     }
 }

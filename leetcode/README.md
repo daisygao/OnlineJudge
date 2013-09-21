@@ -46,7 +46,7 @@ Container With Most Water: hard greedy tricky
 
 Convert Sorted Array to Binary Search Tree: easy
 
-Convert Sorted List to Binary Search Tree: hard bottom-up recursion
+Convert Sorted List to Binary Search Tree: medium global pointer bottom-up recursion 
 
 Count and Say: easy
 
