@@ -12,8 +12,6 @@ public class Solution {
         // Start typing your Java solution below
         // DO NOT write main() function
         if (root == null) return 0;
-        int left = maxDepth(root.left);
-        int right = maxDepth(root.right);
-        return 1 + Math.max(left, right);
+        return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
     }
 }
