@@ -11,26 +11,23 @@ public class Solution {
     public ArrayList<ArrayList<Integer>> levelOrderBottom(TreeNode root) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
-        if (root == null) return result;
-        Stack<ArrayList<Integer>> st = new Stack<ArrayList<Integer>>();
-        ArrayList<TreeNode> layer1 = new ArrayList<TreeNode>(),
-	    layer2 = new ArrayList<TreeNode>();
-        layer1.add(root);
-        while (layer1.size() != 0) {
-            ArrayList<Integer> list = new ArrayList<Integer>();
-            for (TreeNode node : layer1) {
-                list.add(node.val);
-                if (node.left != null) layer2.add(node.left);
-                if (node.right != null) layer2.add(node.right);
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<ArrayList<Integer>>();
+        if (root == null) return ans;
+        ArrayList<TreeNode> current = new ArrayList<TreeNode>(), next = new ArrayList<TreeNode>();
+        ArrayList<Integer> row = new ArrayList<Integer>();
+        current.add(root);
+        while (!current.isEmpty()) {
+            for (TreeNode node : current) {
+                row.add(node.val);
+                if (node.left != null) next.add(node.left);
+                if (node.right != null) next.add(node.right);
             }
-            st.push(list);
-            layer1 = layer2;
-            layer2 = new ArrayList<TreeNode>();
+            ans.add(0, row);
+            row = new ArrayList<Integer>();
+            current = next;
+            next = new ArrayList<TreeNode>();
         }
-        while (!st.empty()) {
-            result.add(st.pop());
-        }
-        return result;
+        
+        return ans;
     }
 }
