@@ -11,30 +11,25 @@ public class Solution {
     public ArrayList<ArrayList<Integer>> zigzagLevelOrder(TreeNode root) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
-        if (root == null) return result;
-        Stack<TreeNode> layer1 = new Stack<TreeNode>(),
-	    layer2 = new Stack<TreeNode>();
-        layer1.push(root);
-        int layer = 0;
-        while (!layer1.empty()) {
-            ArrayList<Integer> list = new ArrayList<Integer>();
-            while (!layer1.empty()) {
-                TreeNode node = layer1.pop();
-                list.add(node.val);
-                if (layer % 2 == 0) {
-                    if (node.left != null) layer2.push(node.left);
-                    if (node.right != null) layer2.push(node.right);                    
-                } else {
-                    if (node.right != null) layer2.push(node.right);
-                    if (node.left != null) layer2.push(node.left);                    
-                }
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<ArrayList<Integer>>();
+        if (root == null) return ans;
+        ArrayList<Integer> row = new ArrayList<Integer>();
+        ArrayList<TreeNode> current = new ArrayList<TreeNode>(), next = new ArrayList<TreeNode>();
+        current.add(root);
+        int idx = 0;
+        while (!current.isEmpty()) {
+            for (TreeNode node : current) {
+                if (idx % 2 == 0) row.add(node.val);
+                else row.add(0, node.val);
+                if (node.left != null) next.add(node.left);
+                if (node.right != null) next.add(node.right);
             }
-            result.add(list);
-            layer1 = layer2;
-            layer2 = new Stack<TreeNode>();
-            layer++;
+            ans.add(row);
+            row = new ArrayList<Integer>();
+            current = next;
+            next = new ArrayList<TreeNode>();
+            idx++;
         }
-        return result;
+        return ans;
     }
 }
