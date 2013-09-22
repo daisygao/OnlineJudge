@@ -22,7 +22,7 @@ Best Time to Buy and Sell Stock III: DP
 
 Binary Tree Inorder Traversal: iteratively
 
-Binary Tree Level Order Traversal: easy
+Binary Tree Level Order Traversal: easy both queue and buffer methods
 
 Binary Tree Level Order Traversal II: easy
 
