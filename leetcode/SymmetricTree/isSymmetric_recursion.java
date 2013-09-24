@@ -12,13 +12,10 @@ public class Solution {
         // Start typing your Java solution below
         // DO NOT write main() function
         if (root == null) return true;
-        return isSymmetricHelper(root.left, root.right);
+        return helper(root.left, root.right);
     }
-    private boolean isSymmetricHelper(TreeNode left, TreeNode right) {
-        if (left == null && right == null) return true;
-        else if (left == null || right == null) return false;
-        else {
-            return left.val == right.val && isSymmetricHelper(left.left, right.right) && isSymmetricHelper(left.right, right.left);   
-        }
+    private boolean helper(TreeNode a, TreeNode b) {
+        if (a == null || b == null) return a == b;
+        return a.val == b.val && helper(a.left, b.right) && helper(a.right, b.left);
     }
 }
