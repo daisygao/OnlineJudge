@@ -8,30 +8,25 @@
  * }
  */
 public class Solution {
-    private class Ret {
-        public boolean isValid;
-        public int max, min;
-        Ret() {
-            this.isValid = true;
-            this.max = Integer.MIN_VALUE;
-            this.min = Integer.MAX_VALUE;
+    private class Pair {
+        public int min, max;
+        Pair() {
+            min = Integer.MAX_VALUE;
+            max = Integer.MIN_VALUE;
         }
     }
     public boolean isValidBST(TreeNode root) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        return helper(root).isValid;
+        return helper(root) != null;
     }
-    private Ret helper(TreeNode root) {
-        Ret ret = new Ret();
-        if (root == null) return ret;
-        Ret left = helper(root.left), right = helper(root.right);
-        if (!left.isValid || !right.isValid || root.val <= left.max || root.val >= right.min) {
-            ret.isValid = false;
-            return ret;
-        }
-        ret.min = Math.min(root.val, left.min);
-        ret.max = Math.max(root.val, right.max);
-        return ret;
+    private Pair helper(TreeNode root) {
+        Pair ans = new Pair();
+        if (root == null) return ans;
+        Pair left = helper(root.left), right = helper(root.right);
+        if (left == null || right == null || left.max >= root.val || right.min <= root.val) return null;
+        ans.min = Math.min(root.val, left.min);
+        ans.max = Math.max(root.val, right.max);
+        return ans;
     }
 }
