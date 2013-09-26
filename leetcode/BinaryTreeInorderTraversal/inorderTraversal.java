@@ -11,27 +11,21 @@ public class Solution {
     public ArrayList<Integer> inorderTraversal(TreeNode root) {
         // Start typing your Java solution below
         // DO NOT write main() function
+        ArrayList<Integer> ans = new ArrayList<Integer>();
+        if (root == null) return ans;
         Stack<TreeNode> st = new Stack<TreeNode>();
-        ArrayList<Integer> result = new ArrayList<Integer>();
-        if (root == null) return result;
-        TreeNode node = root;
-        st.push(node);
-        while (!st.empty()) {
-            while (node.left != null) {
-                node = node.left;
-                st.push(node);
+        TreeNode current = root;
+        while (current != null || !st.isEmpty()) {
+            while (current != null) {
+                st.push(current);
+                current = current.left;
             }
-            node = st.pop();
-            result.add(node.val);
-            while (node.right == null && !st.empty()) {
-                node = st.pop();
-                result.add(node.val);
+            while ((current == null || current.right == null) && !st.isEmpty()) {
+                current = st.pop();
+                ans.add(current.val);
             }
-            if (node.right != null) {
-                node = node.right;
-                st.push(node);
-            }
+            current = current.right;
         }
-        return result;
+        return ans;
     }
 }
