@@ -9,11 +9,10 @@ public class Solution {
         Arrays.sort(num);
         int idx = 0, len = num.length;
         while (idx < ans.size()) {
-            list = ans.get(idx);
             for (int s = pos.get(idx); s < len; s++) {
-                ArrayList<Integer> newList = new ArrayList<Integer>(list);
-                newList.add(num[s]);
-                ans.add(newList);
+                list = new ArrayList<Integer>(ans.get(idx));
+                list.add(num[s]);
+                ans.add(list);
                 pos.add(s + 1);
                 while (s + 1 < len && num[s + 1] == num[s]) s++;
             }
