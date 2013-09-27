@@ -18,19 +18,16 @@ public class Solution {
         label2idx.put(node.label, queue.size() - 1);
         int idx = 0;
         while (idx < queue.size()) {
-            UndirectedGraphNode orinode = queue.get(idx++);
-            for (UndirectedGraphNode oc : orinode.neighbors) {
-                if (label2idx.containsKey(oc.label)) continue;
-                queue.add(oc);
-                queue_ans.add(new UndirectedGraphNode(oc.label));
-                label2idx.put(oc.label, queue.size() - 1);
-            }
-        }
-        for (idx = queue.size() - 1; idx >= 0; idx--) {
             UndirectedGraphNode orinode = queue.get(idx);
             for (UndirectedGraphNode oc : orinode.neighbors) {
+                if (!label2idx.containsKey(oc.label)) {
+                    queue.add(oc);
+                    queue_ans.add(new UndirectedGraphNode(oc.label));
+                    label2idx.put(oc.label, queue.size() - 1);
+                }
                 queue_ans.get(idx).neighbors.add(queue_ans.get(label2idx.get(oc.label)));
             }
+            idx++;
         }
         return queue_ans.get(0);
     }
