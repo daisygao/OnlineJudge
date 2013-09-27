@@ -13,21 +13,21 @@ public class Solution {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        ListNode fakeHead = new ListNode(Integer.MIN_VALUE), prev = fakeHead, end = fakeHead, cur = null;
+        ListNode fakeHead = new ListNode(0), current = head, prev = fakeHead, last = current;
         fakeHead.next = head;
-        while (m-- > 0 && end != null) {
-            prev = end;
-            end = end.next;
-            n--;
+        n -= m;
+        while (--m > 0) {
+            prev = current;
+            current = current.next;
         }
-        if (end != null) {
-            cur = end.next;
-        }
-        while (n-- > 0 && cur != null) {
-            end.next = cur.next;
-            cur.next = prev.next;
-            prev.next = cur;
-            cur = end.next;
+        last = current;
+        current = current.next;
+        while (n-- > 0) {
+            ListNode next = current.next;
+            current.next = prev.next;
+            prev.next = current;
+            last.next = next;
+            current = next;
         }
         return fakeHead.next;
     }
