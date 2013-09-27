@@ -32,6 +32,8 @@ Binary Tree Zigzag Level Order Traversal: medium
 
 Climbing Stairs: DP
 
+Clone Graph: BFS + hash
+
 Combination Sum: recursion
 
 Combination Sum II: recursion
