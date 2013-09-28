@@ -108,7 +108,7 @@ Merge Intervals: easy
 
 Merge k Sorted Lists: priority queue of size k
 
-Merge Sorted Array: easy
+Merge Sorted Array: easy extremely short code
 
 Merge Two Sorted List: easy
 
