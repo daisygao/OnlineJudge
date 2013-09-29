@@ -11,7 +11,8 @@ public class Solution {
         if (l1 == 1) return true;
         for (int i = 1; i < l1; i++) {
             if ((isScramble(s1.substring(0, i), s2.substring(0, i)) && isScramble(s1.substring(i), s2.substring(i))) || 
-            (isScramble(s1.substring(0, i), s2.substring(l2 - i)) && isScramble(s1.substring(i), s2.substring(0, l2 - i)))) return true;
+            (isScramble(s1.substring(0, i), s2.substring(l2 - i)) && isScramble(s1.substring(i), s2.substring(0, l2 - i)))) 
+                return true;
         }
         return false;
     }
