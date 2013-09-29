@@ -15,7 +15,6 @@ public class Solution {
     }
     private boolean helper(char[][] board, int x, int y, int height, int width, String word, boolean[][] visited) {
         int len = word.length(), dx[] = {0, -1, 0, 1}, dy[] = {-1, 0, 1, 0};
-        if (len == 0) return true;
         if (board[x][y] != word.charAt(0) || visited[x][y]) return false;
         if (len == 1) return true;
         visited[x][y] = true;
