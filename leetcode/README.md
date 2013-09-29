@@ -188,7 +188,7 @@ Rotate List: medium
 
 Same Tree: easy
 
-Scramble String: hard classic, recursion & pruning
+Scramble String: medium recursion & pruning
 
 Search a 2D Matrix: binary search:
 
