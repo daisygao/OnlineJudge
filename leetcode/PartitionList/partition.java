@@ -13,28 +13,23 @@ public class Solution {
     public ListNode partition(ListNode head, int x) {
         // Start typing your Java solution below
         // DO NOT write main() function
-        ListNode cur = head, tail = null, backtail = null, back = null, next = null;
-        while (cur != null) {
-            next = cur.next;
-            if (cur.val >= x) {
-                backtail = cur;
-                if (back == null) {
-                    back = cur;
-                } 
+        ListNode fakeHead = new ListNode(0), i = fakeHead, prev = null, current = head;
+        fakeHead.next = head;
+        while (current != null) {
+            if (current.val >= x) {
+                prev = current;
+                current = current.next;
+            } else if (prev != null) {
+                prev.next = current.next;
+                current.next = i.next;
+                i.next = current;
+                i = current;
+                current = prev.next;
             } else {
-                if (back != null) {
-                    backtail.next = next;
-                    cur.next = back;                                    
-                    if (tail == null) {
-                        head = cur;
-                    } else {
-                        tail.next = cur;
-                    }
-                }
-                tail = cur;
+                i = current;
+                current = current.next;
             }
-            cur = next;
         }
-        return head;
+        return fakeHead.next;
     }
 }
