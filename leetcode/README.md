@@ -132,7 +132,7 @@ Palindrome Partitioning: recursion
 
 Palindrome Partitioning II: DP on sol and palindrome
 
-Partition List: detail..
+Partition List: easy but kindof tricky..
 
 Pascal's Triangle: DP 
 
