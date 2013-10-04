@@ -64,6 +64,8 @@ First Missing Positive: classic
 
 Flatten Binary Tree to Linked List: easy
 
+Gas Station: easy similar to Longest Consecutive Seq
+
 Generate Parentheses: recursion
 
 Gray Code: classic trick generating subsets or binary numbers
