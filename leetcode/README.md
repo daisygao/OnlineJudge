@@ -1,4 +1,4 @@
-My solutions to the leetcode online judge questions.
+
 
 3Sum: easy
 
@@ -207,6 +207,8 @@ Search Insert Position: easy
 Set Matrix Zeroes: details...
 
 Simplify Path: easy details...
+
+Single Number: easy classic xor
 
 Sort Colors: Dutch National Flag Problem loop invariant
 
