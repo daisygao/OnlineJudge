@@ -30,6 +30,8 @@ Binary Tree Maximum Path Sum: hard
 
 Binary Tree Zigzag Level Order Traversal: medium
 
+Candy ※: medium. Greedy algorithm. Similar to Dijsktra
+
 Climbing Stairs: DP
 
 Clone Graph: BFS + hash
