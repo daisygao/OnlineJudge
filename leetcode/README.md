@@ -52,6 +52,8 @@ Convert Sorted Array to Binary Search Tree: easy
 
 Convert Sorted List to Binary Search Tree: medium global pointer bottom-up recursion 
 
+Copy List with Random Pointer: deep copy queue
+
 Count and Say: easy
 
 Decode Ways: DP medium
