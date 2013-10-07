@@ -264,6 +264,10 @@ Validate Binary Search Tree : similar to Balanced Tree
 
 Wildcard Matching: hard
 
+Word Break: DP
+
+Word Break II ※: DP + parent + recursion. Note time efficiency
+
 Word Ladder: BFS using queue and HashMap 
 
 Word Ladder II: medium 
