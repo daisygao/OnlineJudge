@@ -212,6 +212,8 @@ Simplify Path: easy details...
 
 Single Number: easy classic xor
 
+Single Number II ※: bits arithmetics, classic
+
 Sort Colors: Dutch National Flag Problem loop invariant
 
 Spiral Matrix: classic
