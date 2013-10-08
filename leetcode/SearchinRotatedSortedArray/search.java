@@ -1,7 +1,7 @@
 public class Solution {
     public int search(int[] A, int target) {
         // Note: The Solution object is instantiated only once and is reused by each test case.
-        int len = A.length, l = 0, r = len - 1, m;
+        int l = 0, r = A.length - 1, m;
         while (l <= r) {
             m = l + (r - l >> 1);
             if (A[m] == target) return m;
