@@ -200,7 +200,7 @@ Search a 2D Matrix: binary search:
 
 Search for a Range: recursion or twice binary search
 
-Search in Rotated Sorted Array: medium
+Search in Rotated Sorted Array: classic 
 
 Search in Rotated Sorted Array II: medium
 

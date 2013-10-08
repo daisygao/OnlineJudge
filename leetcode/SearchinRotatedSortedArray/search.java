@@ -1,17 +1,16 @@
 public class Solution {
     public int search(int[] A, int target) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        int len = A.length, low = 0, high = len - 1, mid;
-        while (low <= high) {
-            mid = low + (high - low) / 2;
-            if (A[mid] == target) return mid;
-            else if (A[mid] > target) {
-                if (A[high] < A[mid] && A[low] > target) low = mid + 1;
-                else high = mid - 1;
+        // Note: The Solution object is instantiated only once and is reused by each test case.
+        int len = A.length, l = 0, r = len - 1, m;
+        while (l <= r) {
+            m = l + (r - l >> 1);
+            if (A[m] == target) return m;
+            if (A[l] <= A[m]) {
+                if (A[l] <= target && target < A[m]) r = m - 1;
+                else l = m + 1;
             } else {
-                if (A[low] > A[mid] && A[high] < target) high = mid - 1;
-                else low = mid + 1;
+                if (A[m] < target && target <= A[r]) l = m + 1;
+                else r = m - 1;
             }
         }
         return -1;
