@@ -1,15 +1,13 @@
 public class Solution {
     public int removeDuplicates(int[] A) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        int len = A.length, last = -1, start = 0, end = 0;
+        // Note: The Solution object is instantiated only once and is reused by each test case.
+        int len = A.length, start = 0, end = start, idx = 0;
         while (start < len) {
-            while (end + 1 < len && A[end + 1] == A[start]) end++;
-            A[++last] = A[start];
-            if (start != end) A[++last] = A[start];
-            end++;
-            start = end;
+            while (end + 1 < len && A[end + 1] == A[end]) end++;
+            A[idx++] = A[end];
+            if (end > start) A[idx++] = A[end];
+            end = start = end + 1;
         }
-        return last + 1;
+        return idx;
     }
 }
