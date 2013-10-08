@@ -170,7 +170,7 @@ Remove Duplicates from Sorted Array: easy
 
 Remove Duplicates from Sorted Array II: easy
 
-Remove Duplicates from Sorted List: !
+Remove Duplicates from Sorted List: slim code!
 
 Remove Duplicates from Sorted List II: easy
 
