@@ -11,18 +11,17 @@
  */
 public class Solution {
     public ListNode deleteDuplicates(ListNode head) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        ListNode fakeHead = new ListNode(Integer.MAX_VALUE), start = head, end = head, prev = fakeHead;
+        // Note: The Solution object is instantiated only once and is reused by each test case.
+        ListNode fakeHead = new ListNode(0), prev = fakeHead, current = head, end = current;
         fakeHead.next = head;
-        while (start != null) {
-            while (end.next != null && end.next.val == start.val) end = end.next;
-            if (start == end) {
-                prev = start;
+        while (end != null) {
+            while (end.next != null && end.next.val == current.val) end = end.next;
+            if (end == current) {
+                prev = current;
             } else {
                 prev.next = end.next;
             }
-            start = end = end.next;
+            end = current = end.next;
         }
         return fakeHead.next;
     }
