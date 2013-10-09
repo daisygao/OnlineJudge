@@ -1,23 +1,20 @@
 public class Solution {
     public ArrayList<ArrayList<Integer>> combine(int n, int k) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>(),
-	    queue = new ArrayList<ArrayList<Integer>>();
-        if (k == 0) return result;
+        // Note: The Solution object is instantiated only once and is reused by each test case.
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<ArrayList<Integer>>(), queue = new ArrayList<ArrayList<Integer>>();
+        if (k == 0 || n < k) return ans;
         queue.add(new ArrayList<Integer>());
-        int qidx = 0;
-        while (qidx < queue.size()) {
-            ArrayList<Integer> list = queue.get(qidx);
-            int end = list.size() == 0 ? 0 : list.get(list.size() - 1);
-            for (int i = end + 1; i <= n; i++) {
-                ArrayList<Integer> newList = new ArrayList<Integer>(list);
-                newList.add(i);
-                if (newList.size() == k) result.add(newList);
-                else queue.add(newList);
+        int idx = 0;
+        while (idx < queue.size()) {
+            ArrayList<Integer> list = queue.get(idx++);
+            int x = 1 + (list.size() == 0 ? 0 : list.get(list.size() - 1));
+            for (; x <= n; x++) {
+                ArrayList<Integer> list_ans = new ArrayList<Integer>(list);
+                list_ans.add(x);
+                if (list_ans.size() == k) ans.add(list_ans);
+                else queue.add(list_ans);
             }
-            qidx++;
         }
-        return result;
+        return ans;
     }
 }
