@@ -1,20 +1,17 @@
 public class Solution {
     public void sortColors(int[] A) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        int len = A.length, i = -1, j = len, k = 0, x;
-        while (k < j) {
-            if (A[k] == 2) {
-                x = A[k];
-                A[k] = A[--j];
-                A[j] = x;
+        // Note: The Solution object is instantiated only once and is reused by each test case.
+        int len = A.length, i0 = -1, i1 = 0, i2 = len;
+        while (i1 < i2) {
+            if (A[i1] == 2) {
+                A[i1] = A[--i2];
+                A[i2] = 2;
             } else {
-                if (A[k] == 0) {
-                    x = A[k];
-                    A[k] = A[++i];
-                    A[i] = x;
+                if (A[i1] == 0) {
+                    A[i1] = A[++i0];
+                    A[i0] = 0;
                 }
-                k++;
+                i1++;
             }
         }
     }
