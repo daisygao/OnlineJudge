@@ -122,7 +122,7 @@ Minimum Depth of Binary Tree: make sure to understand the definition of minDepth
 
 Minimum Path Sum: DP
 
-Minimum Window Substring: hard
+Minimum Window Substring ※: ascii hash 
 
 Multiply Strings: medium large number or string
 

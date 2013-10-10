@@ -1,37 +1,32 @@
 public class Solution {
     public String minWindow(String S, String T) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        int slen = S.length(), tlen = T.length(), cnt = 0, start = 0;
-        int toFind[] = new int[256], found[] = new int[256];
-        for (int i = 0; i < tlen; i++) {
-            int key = (int)T.charAt(i);
-            toFind[key]++;
-        }
-        int min = Integer.MAX_VALUE;
-        String result = "";
+        // Note: The Solution object is instantiated only once and is reused by each test case.
+        int slen = S.length(), tlen = T.length(), start = 0, needed[] = new int[256], found[] = new int[256], count = 0, min = Integer.MAX_VALUE;
+        String ans = "";
+        if (tlen > slen) return ans;
+        for (int i = 0; i < tlen; i++) needed[(int) T.charAt(i)]++;
         for (int i = 0; i < slen; i++) {
-            int skey = (int)S.charAt(i);
-            if (toFind[skey] > 0) {
-                found[skey]++;
-                if (found[skey] <= toFind[skey]) cnt++;
-                if (cnt == tlen) {
-                    while (start <= i) {
-                        int key = (int)S.charAt(start);
-                        if (toFind[key] > 0) {
-                            if (toFind[key] == found[key]) break;
+            int key = (int) S.charAt(i);
+            if (needed[key] > 0) {
+                found[key]++;
+                if (found[key] <= needed[key]) count++;
+                if (count == tlen) {
+                    for (; start <= i; start++) {
+                        key = (int) S.charAt(start);
+                        if (needed[key] > 0) {
+                            if (found[key] == needed[key]) {
+                                if (min > i - start + 1) {
+                                    min = i - start + 1;
+                                    ans = S.substring(start, i + 1);
+                                }
+                                break;
+                            }
                             found[key]--;
                         }
-                        start++;
                     }
-                    if (i - start + 1 < min) {
-                        min = i - start + 1;
-                        result = S.substring(start, i + 1);
-                    }
-                    
                 }
             }
         }
-        return result;
+        return ans;
     }
 }
