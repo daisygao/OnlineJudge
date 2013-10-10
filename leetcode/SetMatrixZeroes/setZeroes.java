@@ -1,10 +1,9 @@
 public class Solution {
     public void setZeroes(int[][] matrix) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
+        // Note: The Solution object is instantiated only once and is reused by each test case.
         int height = matrix.length;
         if (height == 0) return;
-        int width = matrix[0].length, col0 = matrix[0][0];
+        int width = matrix[0].length, col0 = 1;
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
                 if (matrix[i][j] == 0) {
@@ -16,15 +15,15 @@ public class Solution {
         }
         for (int i = 1; i < height; i++) {
             for (int j = 1; j < width; j++) {
-                if (matrix[i][0] == 0 || matrix[0][j] == 0) 
-                    matrix[i][j] = 0;
+                if (matrix[0][j] == 0 || matrix[i][0] == 0) matrix[i][j] = 0;
             }
         }
         if (matrix[0][0] == 0) {
-            for (int i = 1; i < width; i++) matrix[0][i] = 0;
+            for (int i = 0; i < width; i++) matrix[0][i] = 0;
         }
         if (col0 == 0) {
             for (int i = 0; i < height; i++) matrix[i][0] = 0;
         }
+        
     }
 }
