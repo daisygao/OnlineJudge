@@ -196,7 +196,7 @@ Same Tree: easy
 
 Scramble String: medium recursion & pruning
 
-Search a 2D Matrix: binary search:
+Search a 2D Matrix: binary search
 
 Search for a Range: recursion or twice binary search
 
