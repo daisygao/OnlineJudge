@@ -184,6 +184,8 @@ Remove Element: easy
 
 Remove Nth Node From End of List: classic
 
+Reorder List: easy detail..
+
 Restore IP Addresses: recursion easy corner cases..
 
 Reverse Integer: easy overflow
