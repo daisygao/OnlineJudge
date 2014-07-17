@@ -28,6 +28,8 @@ Binary Tree Level Order Traversal II: easy
 
 Binary Tree Maximum Path Sum: hard
 
+Binary Tree Postorder Traversal: medium pop condition
+
 Binary Tree Zigzag Level Order Traversal: medium
 
 Candy ※: medium. Greedy algorithm. Similar to Dijsktra
