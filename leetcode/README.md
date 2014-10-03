@@ -112,6 +112,8 @@ Maximal Rectangle ※: use union-find set to construct the monotone queue instea
 
 Maximum Depth of Binary Tree: easy
 
+Maximum Product Subarray: medium DP
+
 Maximum Subarray: easy
 
 Median of Two Sorted Arrays: binary search hard 
