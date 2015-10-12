@@ -286,6 +286,8 @@ Word Ladder: BFS using queue and HashMap
 
 Word Ladder II: medium 
 
+Word Pattern: medium
+
 Word Search: recursion easy 
 
 ZigZag Conversion: medium 
