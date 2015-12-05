@@ -8,6 +8,8 @@
 
 Add Binary: easy
 
+Add Digits: math n - 1
+
 Add Two Numbers: easy
 
 Anagrams: easy
