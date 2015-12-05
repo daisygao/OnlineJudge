@@ -62,6 +62,8 @@ Count and Say: easy
 
 Decode Ways: DP medium
 
+Delete Node in a Linked List: fill instead of "real" deletion
+
 Distinct Subsequences: DP medium
 
 Divide Two Integers: binary medium
