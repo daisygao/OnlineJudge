@@ -140,6 +140,8 @@ N-Queens II: easy
 
 Next Permutation: classic 
 
+Nim Game: math 
+
 Palindrome Number: easy
 
 Palindrome Partitioning: recursion
