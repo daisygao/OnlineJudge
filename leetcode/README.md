@@ -136,6 +136,8 @@ Minimum Path Sum: DP
 
 Minimum Window Substring ※: ascii hash 
 
+Move Zeros: think through different cases before coding
+
 Multiply Strings: medium large number or string
 
 N-Queens: easy
