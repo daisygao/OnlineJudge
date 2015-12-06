@@ -92,6 +92,8 @@ Integer to Roman: medium
 
 Interleaving String: DP
 
+Invert Binary Tree: recursive
+
 Jump Game: Greedy O(n) BFS or DFS
 
 Jump Game II ※: DP BFS hard
