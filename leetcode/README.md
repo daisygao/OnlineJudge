@@ -52,6 +52,8 @@ Construct Binary Tree from Preorder and Inorder Traversal: easy
 
 Container With Most Water: hard greedy tricky
 
+Contains Duplicates: cannot sort an empty array; C++ set insert return value is pair
+
 Convert Sorted Array to Binary Search Tree: easy
 
 Convert Sorted List to Binary Search Tree: medium global pointer bottom-up recursion 
