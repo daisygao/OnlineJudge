@@ -278,6 +278,8 @@ Unique Paths: DP 1d
 
 Unique Paths II: DP 1d
 
+Valid Anagram: vector initialization
+
 Valid Palindrome: easy
 
 Valid Parentheses: easy
