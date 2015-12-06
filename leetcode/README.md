@@ -1,5 +1,3 @@
-
-
 3Sum: easy
 
 3Sum Closest: easy
@@ -73,6 +71,8 @@ Divide Two Integers: binary medium
 Edit Distance: DP medium
 
 Evaluate Reverse Polish Notation: easy
+
+Excel Sheet Column Number: no brainer
 
 First Missing Positive: classic
 
