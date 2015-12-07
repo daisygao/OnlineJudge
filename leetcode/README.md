@@ -116,6 +116,8 @@ Longest Substring Without Repeating Characters: O(n) using hash
 
 Longest Valid Parentheses ※: stack + DP + max O(n) time complexity
 
+Majority Element: median
+
 Maximal Rectangle ※: use union-find set to construct the monotone queue instead of the stack. Stack will exceed time limit for large judge. 
 
 Maximum Depth of Binary Tree: easy
