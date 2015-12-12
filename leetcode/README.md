@@ -220,7 +220,7 @@ Reverse Nodes in k-Group: easy
 
 Reverse Words in a String: easy & tricky
 
-Roman to Integer: easy
+Roman to Integer: math trick: sum += cur - 2 * (sum % cur)
 
 Rotate Image: classic details
 
