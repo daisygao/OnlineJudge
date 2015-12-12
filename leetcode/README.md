@@ -158,6 +158,8 @@ Next Permutation: classic
 
 Nim Game: math 
 
+Number of 1 Bits: n & (n - 1) trick for sparse ones
+
 Palindrome Number: easy
 
 Palindrome Partitioning: recursion
