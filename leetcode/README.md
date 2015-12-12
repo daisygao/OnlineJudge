@@ -282,6 +282,8 @@ Triangle: DP O(n^2)
 
 Two Sum: hash / quicksort + binary 
 
+Ugly Number: corner case ZERO!
+
 Unique Binary Search Trees: DP
 
 Unique Binary Search Trees II: recursion
