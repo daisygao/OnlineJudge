@@ -212,6 +212,8 @@ Restore IP Addresses: recursion easy corner cases..
 
 Reverse Integer: easy overflow
 
+Reverse Linked List: pointer initialization...*p = NULL
+
 Reverse Linked List II: classic 
 
 Reverse Nodes in k-Group: easy
