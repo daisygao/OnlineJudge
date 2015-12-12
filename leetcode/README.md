@@ -34,7 +34,7 @@ Binary Tree Zigzag Level Order Traversal: medium
 
 Candy ※: medium. Greedy algorithm. Similar to Dijsktra
 
-Climbing Stairs: DP
+Climbing Stairs: DP with O(1) space
 
 Clone Graph: BFS + hash
 
