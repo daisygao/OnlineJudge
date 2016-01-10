@@ -84,6 +84,8 @@ Generate Parentheses: recursion
 
 Gray Code: classic trick generating subsets or binary numbers
 
+Happy Number: all about hash
+
 Implement strStr(): easy
 
 Insert Interval: medium
