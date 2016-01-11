@@ -120,7 +120,7 @@ Longest Valid Parentheses ※: stack + DP + max O(n) time complexity
 
 Lowest Common Ancestor of a Binary Search Tree: easy
 
-Lowest Common Ancestor of a Binary Tree: not neat...
+Lowest Common Ancestor of a Binary Tree: recursion does everything 
 
 Majority Element: median or Moore voting algorithm
 

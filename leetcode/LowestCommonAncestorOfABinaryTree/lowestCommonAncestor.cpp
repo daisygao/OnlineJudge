@@ -10,18 +10,11 @@
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        if (p == q) return p;
-        else if (root == p) return root;
-        else if (root == q) return root;
-        bool leftp = contains(root->left, p), rightq = contains(root->right, q);
-        if ((leftp && rightq) || (!leftp && !rightq)) return root;
-        else if (leftp && !rightq) return lowestCommonAncestor(root->left, p, q);
-        else if (!leftp && rightq) return lowestCommonAncestor(root->right, p, q);
-    }
-    bool contains(TreeNode* root, TreeNode* p) {
-        if (root == p) return true;
-        if (!p) return true;
-        if (!root) return false;
-        return contains(root->left, p) || contains(root->right, p);
+        if (root == NULL) return NULL;
+        if (root == p || root == q) return root;
+        TreeNode *left = lowestCommonAncestor(root->left, p, q);
+        TreeNode *right = lowestCommonAncestor(root->right, p, q);
+        if (left && right) return root;
+        return left ? left : right;
     }
 };
