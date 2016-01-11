@@ -192,6 +192,8 @@ Populating Next Right Pointers in Each Node II: easy from right to left
 
 Pow(x, n): tricky Integer boundary
 
+Power Of Three: zero handling and math
+
 Recover Binary Search Tree: both recursively and iteratively medium
 
 Regular Expression Matching: medium recursion
