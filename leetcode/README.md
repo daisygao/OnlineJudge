@@ -86,6 +86,8 @@ Gray Code: classic trick generating subsets or binary numbers
 
 Happy Number: all about hash
 
+House Robber: DP two params in equation = two variables
+
 Implement strStr(): easy
 
 Insert Interval: medium
