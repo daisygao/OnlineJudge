@@ -24,7 +24,7 @@ Binary Tree Inorder Traversal: iteratively
 
 Binary Tree Level Order Traversal: easy both queue and buffer methods
 
-Binary Tree Level Order Traversal II: easy
+Binary Tree Level Order Traversal II: DFS is cool...BFS using one queue 
 
 Binary Tree Maximum Path Sum: hard
 
