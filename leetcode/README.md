@@ -276,7 +276,7 @@ Surrounded Regions: medium queue
 
 Swap Nodes in Pairs: easy fake head
 
-Symmetric Tree: recursively and iteratively by using queues
+Symmetric Tree: recursion - input; iteration by using one queue 
 
 Text Justification: medium
 
