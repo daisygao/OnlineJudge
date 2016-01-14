@@ -200,7 +200,7 @@ Recover Binary Search Tree: both recursively and iteratively medium
 
 Regular Expression Matching: medium recursion
 
-Remove Duplicates from Sorted Array: easy
+Remove Duplicates from Sorted Array: cnt method... 
 
 Remove Duplicates from Sorted Array II: easy
 
