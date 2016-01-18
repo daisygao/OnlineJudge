@@ -186,7 +186,7 @@ Permutations: no duplicate recursion medium
 
 Permutations II: next permutation problem
 
-Plus One: easy find the last 9 seq
+Plus One: know where to stop 
 
 Populating Next Right Pointers in Each Node: easy
 
