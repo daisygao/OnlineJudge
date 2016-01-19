@@ -176,7 +176,7 @@ Partition List: easy but kindof tricky..
 
 Pascal's Triangle: one row DP 
 
-Pascal's Triangle II: DP easy
+Pascal's Triangle II: one row DP direction reversed
 
 Path Sum: easy
 
