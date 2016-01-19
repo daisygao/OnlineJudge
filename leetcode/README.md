@@ -74,6 +74,8 @@ Evaluate Reverse Polish Notation: easy
 
 Excel Sheet Column Number: no brainer
 
+Factor Trailing Zeroes: math mod. similiar to Add Digits. 
+
 First Missing Positive: classic
 
 Flatten Binary Tree to Linked List: easy
