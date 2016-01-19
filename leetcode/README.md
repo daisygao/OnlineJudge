@@ -22,7 +22,7 @@ Best Time to Buy and Sell Stock III: DP
 
 Binary Tree Inorder Traversal: iteratively
 
-Binary Tree Level Order Traversal: easy both queue and buffer methods
+Binary Tree Level Order Traversal: one queue solution. queue size = row size 
 
 Binary Tree Level Order Traversal II: DFS is cool...BFS using one queue 
 
