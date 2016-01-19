@@ -172,7 +172,7 @@ Palindrome Partitioning II: DP on sol and palindrome
 
 Partition List: easy but kindof tricky..
 
-Pascal's Triangle: DP 
+Pascal's Triangle: one row DP 
 
 Pascal's Triangle II: DP easy
 
