@@ -178,7 +178,7 @@ Pascal's Triangle: one row DP
 
 Pascal's Triangle II: one row DP direction reversed
 
-Path Sum: easy
+Path Sum: when tree is null, no leaf so no sum, not even 0 
 
 Path Sum II: easy 
 
