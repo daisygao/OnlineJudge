@@ -148,7 +148,7 @@ Merge Sorted Array: easy extremely short code
 
 Merge Two Sorted List: easy
 
-Minimum Depth of Binary Tree: make sure to understand the definition of minDepth which is to count the distance between root and the "leaf" node
+Minimum Depth of Binary Tree: make sure to understand the definition of minDepth which is to count the distance between root and the "leaf" node; when there is only one child...
 
 Minimum Path Sum: DP
 
