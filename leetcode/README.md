@@ -90,6 +90,8 @@ Happy Number: all about hash
 
 House Robber: DP two params in equation = two variables
 
+Implement Stack Using Queues: brilliant idea to use only one queue...making push() an O(n) operation...
+
 Implement strStr(): easy
 
 Insert Interval: medium
