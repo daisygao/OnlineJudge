@@ -309,7 +309,7 @@ Valid Palindrome: easy
 
 Valid Parentheses: easy
 
-Valid Sudoku: easy
+Valid Sudoku: became stupid...use bit mask array = unordered set...cell index computation.. 
 
 Validate Binary Search Tree : similar to Balanced Tree
 
