@@ -102,6 +102,8 @@ Integer to Roman: medium
 
 Interleaving String: DP
 
+Intersection of Two Linked Lists: count number & GOD algo: length(A+B) = length(B+A), you will encounter either the common node or null
+
 Invert Binary Tree: recursive
 
 Jump Game: Greedy O(n) BFS or DFS
