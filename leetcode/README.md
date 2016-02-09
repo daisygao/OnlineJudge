@@ -114,7 +114,7 @@ Jump Game II ※: DP BFS hard
 
 Largest Rectangle in Histogram: left right idx problem. Non-descending sequence using stack
 
-Length of Last Word: easy
+Length of Last Word: length increment
 
 Letter Combinations of a Phone Number: easy
 
