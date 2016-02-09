@@ -108,7 +108,7 @@ Intersection of Two Linked Lists: count number & GOD algo: length(A+B) = length(
 
 Invert Binary Tree: recursive
 
-Isomorphic Strings: double way unique, map + set
+Isomorphic Strings: double way unique: *position map but can't use index directly, must plus 1 to differentiate first time char and pos 0 char; 2)  map + set
 
 Jump Game: Greedy O(n) BFS or DFS
 
