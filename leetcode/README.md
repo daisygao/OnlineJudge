@@ -219,7 +219,8 @@ Remove Duplicates from Sorted List: slim code!
 Remove Duplicates from Sorted List II: easy
 
 Remove Element: fixing one side && cnt method
-Remove Nth Node From End of List: classic
+
+Remove Nth Node From End of List: dummy head
 
 Reorder List: easy detail..
 
