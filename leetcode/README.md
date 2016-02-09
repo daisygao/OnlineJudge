@@ -52,6 +52,8 @@ Container With Most Water: hard greedy tricky
 
 Contains Duplicates: cannot sort an empty array; C++ set insert return value is pair
 
+Contains Duplicate II: 1) greedy 2) sliding window
+
 Convert Sorted Array to Binary Search Tree: easy
 
 Convert Sorted List to Binary Search Tree: medium global pointer bottom-up recursion 
