@@ -30,6 +30,8 @@ Binary Tree Maximum Path Sum: hard
 
 Binary Tree Postorder Traversal: medium pop condition
 
+Bulls and Cows: * one pass counter...brilliant
+
 Binary Tree Zigzag Level Order Traversal: medium
 
 Candy ※: medium. Greedy algorithm. Similar to Dijsktra
