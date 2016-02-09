@@ -334,7 +334,7 @@ Word Ladder: BFS using queue and HashMap
 
 Word Ladder II: medium 
 
-Word Pattern: position map, c++ strsplit using stringstream + getline 
+Word Pattern: position map, c++ strsplit using stringstream + getline with sep * 
 
 Word Search: recursion easy 
 
