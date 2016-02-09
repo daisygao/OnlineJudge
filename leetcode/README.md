@@ -108,6 +108,8 @@ Intersection of Two Linked Lists: count number & GOD algo: length(A+B) = length(
 
 Invert Binary Tree: recursive
 
+Isomorphic Strings: double way unique, map + set
+
 Jump Game: Greedy O(n) BFS or DFS
 
 Jump Game II ※: DP BFS hard
@@ -314,7 +316,7 @@ Valid Anagram: vector initialization
 
 Valid Palindrome: easy
 
-Valid Parentheses: easy
+Valid Parentheses: map + stack
 
 Valid Sudoku: became stupid...use bit mask array = unordered set...cell index computation.. 
 
