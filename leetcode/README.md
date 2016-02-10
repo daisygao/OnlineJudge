@@ -184,7 +184,7 @@ Palindrome Partitioning: recursion
 
 Palindrome Partitioning II: DP on sol and palindrome
 
-Palindrome Linked List: to string...stupid
+Palindrome Linked List: 1) to string 2) * reverse first half in place
 
 Partition List: easy but kindof tricky..
 
