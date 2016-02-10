@@ -28,6 +28,8 @@ Binary Tree Level Order Traversal II: DFS is cool...BFS using one queue
 
 Binary Tree Maximum Path Sum: hard
 
+Binary Tree Paths: vector merge
+
 Binary Tree Postorder Traversal: medium pop condition
 
 Bulls and Cows: * one pass counter...brilliant
