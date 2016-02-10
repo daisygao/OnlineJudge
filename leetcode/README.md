@@ -212,6 +212,8 @@ Pow(x, n): tricky Integer boundary
 
 Power Of Three: zero handling and math
 
+Range Sum Query - Immutable: DP but with i - 1 index!!!
+
 Recover Binary Search Tree: both recursively and iteratively medium
 
 Rectangle Area: overlap coordinates
