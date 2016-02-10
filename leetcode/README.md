@@ -224,6 +224,8 @@ Remove Duplicates from Sorted List II: easy
 
 Remove Element: fixing one side && cnt method
 
+Remove Linked List Elements: dummy head
+
 Remove Nth Node From End of List: dummy head
 
 Reorder List: easy detail..
