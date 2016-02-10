@@ -4,7 +4,7 @@
 
 4Sum: O(n^3) consider efficiency of ArrayList expansion operation
 
-Add Binary: easy
+Add Binary: * all in one 
 
 Add Digits: math n - 1
 
