@@ -62,7 +62,7 @@ Convert Sorted List to Binary Search Tree: medium global pointer bottom-up recur
 
 Copy List with Random Pointer: deep copy queue
 
-Count and Say: easy
+Count and Say: start with 1..
 
 Decode Ways: DP medium
 
