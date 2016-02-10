@@ -184,6 +184,8 @@ Palindrome Partitioning: recursion
 
 Palindrome Partitioning II: DP on sol and palindrome
 
+Palindrome Linked List: to string...stupid
+
 Partition List: easy but kindof tricky..
 
 Pascal's Triangle: one row DP 
