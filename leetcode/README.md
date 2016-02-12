@@ -240,7 +240,7 @@ Restore IP Addresses: recursion easy corner cases..
 
 Reverse Bits: divide and conquer or hash !!unsigned char converted to int != char converted to int
 
-Reverse Integer: easy overflow
+Reverse Integer: overflow at INT_MAX/10
 
 Reverse Linked List: pointer initialization...*p = NULL
 
