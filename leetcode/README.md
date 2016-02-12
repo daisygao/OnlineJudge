@@ -98,7 +98,7 @@ House Robber: DP two params in equation = two variables
 
 Implement Stack Using Queues: brilliant idea to use only one queue...making push() an O(n) operation...
 
-Implement strStr(): easy
+Implement strStr(): KMP. DP. psl=prefix, suffix, equal length. psl[i] = length of prefix same with suffix to current i. if not match, start from the next element of the latest matched prefix.
 
 Insert Interval: medium
 
