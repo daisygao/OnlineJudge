@@ -326,7 +326,7 @@ Unique Paths II: DP 1d
 
 Valid Anagram: vector initialization
 
-Valid Palindrome: easy
+Valid Palindrome: shrink cases to three
 
 Valid Parentheses: map + stack
 
