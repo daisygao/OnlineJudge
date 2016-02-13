@@ -66,6 +66,8 @@ Copy List with Random Pointer: deep copy queue
 
 Count and Say: start with 1..
 
+Count Primes: upperBound, i*j, smaller than n...details...
+
 Decode Ways: DP medium
 
 Delete Node in a Linked List: fill instead of "real" deletion
