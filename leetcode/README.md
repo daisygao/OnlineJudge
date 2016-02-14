@@ -82,7 +82,7 @@ Evaluate Reverse Polish Notation: easy
 
 Excel Sheet Column Number: no brainer
 
-Excel Sheet Column Title: * n-- 
+Excel Sheet Column Title: * n-- && overflow 
 
 Factor Trailing Zeroes: math mod. similiar to Add Digits. 
 
