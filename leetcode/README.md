@@ -300,6 +300,8 @@ Sudoku Solver: medium boolean recursion & bit masking & 2-d array to 1-d array
 
 Sum Root to Leaf Numbers: easy top-down
 
+Summary Ranges: j vs j + 1
+
 Surrounded Regions: medium queue
 
 Swap Nodes in Pairs: easy fake head
