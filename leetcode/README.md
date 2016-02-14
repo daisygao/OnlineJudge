@@ -82,6 +82,8 @@ Evaluate Reverse Polish Notation: easy
 
 Excel Sheet Column Number: no brainer
 
+Excel Sheet Column Title: * n-- 
+
 Factor Trailing Zeroes: math mod. similiar to Add Digits. 
 
 First Bad Version: binary search, invariant: target in [i, j]
