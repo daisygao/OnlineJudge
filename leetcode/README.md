@@ -348,4 +348,4 @@ Word Pattern: position map, c++ strsplit using stringstream + getline with sep *
 
 Word Search: recursion easy 
 
-ZigZag Conversion: medium 
+ZigZag Conversion: given formula size = numRows * 2 - 2 consider corner cases 
