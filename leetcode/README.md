@@ -260,6 +260,8 @@ Reverse Words in a String: easy & tricky
 
 Roman to Integer: math trick: sum += cur - 2 * (sum % cur)
 
+Rotate Array: reverse trick
+
 Rotate Image: classic details
 
 Rotate List: medium
