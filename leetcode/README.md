@@ -84,6 +84,8 @@ Excel Sheet Column Number: no brainer
 
 Factor Trailing Zeroes: math mod. similiar to Add Digits. 
 
+First Bad Version: binary search, invariant: target in [i, j]
+
 First Missing Positive: classic
 
 Flatten Binary Tree to Linked List: easy
