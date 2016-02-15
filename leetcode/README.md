@@ -290,6 +290,8 @@ Single Number: easy classic xor
 
 Single Number II ※: bits arithmetics, classic
 
+Single Number III: 1) init = 0 OK 2) diff & (-diff) to find flag
+
 Sort Colors: Dutch National Flag Problem loop invariant
 
 Spiral Matrix: classic
