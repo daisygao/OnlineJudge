@@ -298,7 +298,7 @@ Spiral Matrix II: easy
 
 Sqrt(x): Newton and binary search 
 
-String to Integer (atoi): boundary
+String to Integer (atoi): 1) trim 2) overflow 3) "+/-" 4) > INT_MAX % 10 trick 
 
 Subsets: easy
 
