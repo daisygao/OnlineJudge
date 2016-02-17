@@ -16,7 +16,7 @@ Balanced Binary Tree: easy
 
 Best Time to Buy and Sell Stock: easy
 
-Best Time to Buy and Sell Stock II: easy inflection point 
+Best Time to Buy and Sell Stock II: DP thinking with one variable 
 
 Best Time to Buy and Sell Stock III: DP
 
