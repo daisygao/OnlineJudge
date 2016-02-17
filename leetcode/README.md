@@ -32,6 +32,8 @@ Binary Tree Paths: vector merge
 
 Binary Tree Postorder Traversal: medium pop condition
 
+Bulb Switcher: math
+
 Bulls and Cows: * one pass counter...brilliant
 
 Binary Tree Zigzag Level Order Traversal: medium
