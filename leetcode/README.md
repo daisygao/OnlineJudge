@@ -176,6 +176,8 @@ Minimum Path Sum: DP
 
 Minimum Window Substring ※: ascii hash 
 
+Missing Number: create duplicate then xor / deduction to extract the target
+
 Move Zeros: think through different cases before coding
 
 Multiply Strings: medium large number or string
