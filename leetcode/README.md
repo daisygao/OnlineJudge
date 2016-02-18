@@ -152,6 +152,8 @@ Lowest Common Ancestor of a Binary Tree: recursion does everything
 
 Majority Element: median or Moore voting algorithm
 
+Maximum Product of Word Lengths: size_type can't deduct 1! pruning
+
 Maximal Rectangle ※: use union-find set to construct the monotone queue instead of the stack. Stack will exceed time limit for large judge. 
 
 Maximum Depth of Binary Tree: easy

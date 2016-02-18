@@ -13,7 +13,7 @@ public:
         stack<TreeNode *> st;
         vector<int> ans;
         TreeNode *p = root;
-        while (p || !st.empty()) {
+        while (p) {
             ans.push_back(p->val);
             if (p->right) st.push(p->right);
             p = p->left;
