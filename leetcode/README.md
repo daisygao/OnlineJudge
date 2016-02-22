@@ -290,7 +290,7 @@ Search in Rotated Sorted Array: classic
 
 Search in Rotated Sorted Array II: medium
 
-Search Insert Position: easy
+Search Insert Position: 1) invariant 2) while condition 3) return value, left or right 
 
 Set Matrix Zeroes: details...
 
