@@ -200,6 +200,8 @@ Nim Game: math
 
 Number of 1 Bits: n & (n - 1) trick for sparse ones
 
+Odd Even Linked List: odd and even head pointers
+
 Palindrome Number: reverse half and compare 
 
 Palindrome Partitioning: recursion
