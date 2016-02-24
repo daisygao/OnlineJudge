@@ -128,6 +128,8 @@ Isomorphic Strings: double way unique: *position map but can't use index directl
 
 Jump Game: Greedy O(n) BFS or DFS
 
+Kth Smallest Element in a BST: bottom up, modify k
+
 Jump Game II ※: DP BFS hard
 
 Largest Rectangle in Histogram: left right idx problem. Non-descending sequence using stack
