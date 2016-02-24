@@ -298,7 +298,7 @@ Simplify Path: easy details...
 
 Single Number: easy classic xor
 
-Single Number II ※: bits arithmetics, classic
+Single Number II : * 1) bit counter using decimal 2) bit counter using binary with mask generated to mod 
 
 Single Number III: 1) init = 0 OK 2) diff & (-diff) to find flag
 
