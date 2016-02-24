@@ -224,7 +224,7 @@ Permutations II: next permutation problem
 
 Plus One: know where to stop 
 
-Populating Next Right Pointers in Each Node: easy
+Populating Next Right Pointers in Each Node: use previous next 
 
 Populating Next Right Pointers in Each Node II: easy from right to left 
 
