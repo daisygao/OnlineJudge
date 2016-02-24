@@ -138,6 +138,8 @@ Length of Last Word: length increment
 
 Letter Combinations of a Phone Number: easy
 
+Linked List Cycle: fast and slow pointer
+
 Longest Common Prefix: 1) empty char = '\0' 2) size() - 1 overflow
 
 Longest Consecutive Sequence ※: hash
