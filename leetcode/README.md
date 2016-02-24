@@ -100,7 +100,7 @@ Flatten Binary Tree to Linked List: easy
 
 Gas Station: easy greedy algorithm. Similar to Longest Consecutive Seq
 
-Generate Parentheses: recursion
+Generate Parentheses: 1) recursion, last case 2) iterative using queues
 
 Gray Code: classic trick generating subsets or binary numbers
 
