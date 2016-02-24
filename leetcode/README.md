@@ -160,7 +160,7 @@ Maximum Depth of Binary Tree: easy
 
 Maximum Product Subarray: medium DP
 
-Maximum Subarray: easy
+Maximum Subarray: initialize min ans max value.. 
 
 Median of Two Sorted Arrays: binary search hard 
 
