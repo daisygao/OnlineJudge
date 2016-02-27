@@ -94,6 +94,8 @@ Excel Sheet Column Title: * n-- && overflow
 
 Factor Trailing Zeroes: math mod. similiar to Add Digits. 
 
+Find Minimum in Sorted Array: infinity loop
+
 First Bad Version: binary search, invariant: target in [i, j]
 
 First Missing Positive: classic
