@@ -102,6 +102,8 @@ First Missing Positive: classic
 
 Flatten Binary Tree to Linked List: easy
 
+Game of Life: * trick - bit + state iteration
+
 Gas Station: easy greedy algorithm. Similar to Longest Consecutive Seq
 
 Generate Parentheses: 1) recursion, last case 2) iterative using queues
