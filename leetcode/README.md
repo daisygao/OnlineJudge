@@ -60,7 +60,7 @@ Construct Binary Tree from Inorder and Postorder Traversal: easy
 
 Construct Binary Tree from Preorder and Inorder Traversal: easy
 
-Container With Most Water: hard greedy tricky
+Container With Most Water: * greedy scan
 
 Contains Duplicates: cannot sort an empty array; C++ set insert return value is pair
 
