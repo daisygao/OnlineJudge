@@ -294,6 +294,8 @@ Scramble String: medium recursion & pruning
 
 Search a 2D Matrix: binary search
 
+Search a 2D Matrix II: *greedy trick start from top right
+
 Search for a Range: recursion or twice binary search
 
 Search in Rotated Sorted Array: classic 
