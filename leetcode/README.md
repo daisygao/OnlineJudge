@@ -178,7 +178,7 @@ Maximum Subarray: initialize min ans max value..
 
 Median of Two Sorted Arrays: binary search hard 
 
-Merge Intervals: easy
+Merge Intervals: lambda comparactor 
 
 Merge k Sorted Lists: priority queue of size k
 
