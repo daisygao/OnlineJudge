@@ -324,7 +324,7 @@ Sort Colors: Dutch National Flag Problem loop invariant
 
 Spiral Matrix: classic
 
-Spiral Matrix II: easy
+Spiral Matrix II: 1) layer offset 2) when n is odd
 
 Sqrt(x): Newton and binary search 
 
