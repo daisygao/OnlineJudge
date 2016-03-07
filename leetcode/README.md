@@ -346,7 +346,7 @@ Summary Ranges: j vs j + 1
 
 Surrounded Regions: medium queue
 
-Swap Nodes in Pairs: easy fake head
+Swap Nodes in Pairs: dummy head 
 
 Symmetric Tree: recursion - input; iteration by using one queue 
 

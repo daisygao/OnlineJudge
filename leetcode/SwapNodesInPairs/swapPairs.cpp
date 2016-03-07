@@ -8,25 +8,18 @@
  */
 class Solution {
 public:
-  ListNode *swapPairs(ListNode *head) {
-    // Start typing your C/C++ solution below
-    // DO NOT write int main() function
-    ListNode *p = head, *prev, *next;
-    while (p != NULL && p->next != NULL) {
-      next = p->next->next;
-      if (p == head) {
-	prev = p;
-	head = p->next;
-	head->next = prev;
-	prev->next = next;              
-      } else {
-	prev->next = p->next;
-	prev->next->next = p;
-	p->next = next;
-	prev = p;
-      }
-      p = next;
+    ListNode* swapPairs(ListNode* head) {
+        ListNode dummy(0);
+        dummy.next = head;
+        ListNode *prev = &dummy, *cur = head;
+        while (cur && cur->next) {
+            ListNode *next = cur->next->next;
+            prev->next = cur->next;
+            prev->next->next = cur;
+            cur->next = next;
+            prev = cur;
+            cur = cur->next;
+        }
+        return dummy.next;
     }
-    return head;
-  }
 };
