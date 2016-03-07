@@ -234,7 +234,7 @@ Path Sum II: easy
 
 Permutation Sequence: easy 
 
-Permutations: no duplicate recursion medium
+Permutations: deque or vector 
 
 Permutations II: next permutation problem
 
