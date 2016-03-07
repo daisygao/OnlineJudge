@@ -364,7 +364,7 @@ Unique Binary Search Trees: DP, iterate root and left, right number
 
 Unique Binary Search Trees II: recursion
 
-Unique Paths: DP 1d
+Unique Paths: DP 1d + init row / column
 
 Unique Paths II: DP 1d
 
