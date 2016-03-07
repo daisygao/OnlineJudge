@@ -190,7 +190,7 @@ Min Stack: struct
 
 Minimum Depth of Binary Tree: make sure to understand the definition of minDepth which is to count the distance between root and the "leaf" node; when there is only one child...
 
-Minimum Path Sum: DP
+Minimum Path Sum: DP 1) O(n) 2) init row & column value
 
 Minimum Window Substring ※: ascii hash 
 
