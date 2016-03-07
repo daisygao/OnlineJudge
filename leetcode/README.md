@@ -22,6 +22,8 @@ Best Time to Buy and Sell Stock III: DP
 
 Best Time to Buy and Sell Stock with Cooldown: DP O(n^2)
 
+Binary Search Tree Iterator: build in constructor
+
 Binary Tree Inorder Traversal: iteratively
 
 Binary Tree Level Order Traversal: one queue solution. queue size = row size 
