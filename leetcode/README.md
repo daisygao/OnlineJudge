@@ -152,6 +152,8 @@ Longest Common Prefix: 1) empty char = '\0' 2) size() - 1 overflow
 
 Longest Consecutive Sequence ※: hash
 
+Longest Increasing Subsequence: * active list DP, store only the last element of the list
+
 Longest Palindromic Substring: DP 
 
 Longest Substring Without Repeating Characters: O(n) using hash 
