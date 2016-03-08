@@ -300,7 +300,7 @@ Same Tree: easy
 
 Scramble String: medium recursion & pruning
 
-Search a 2D Matrix: binary search
+Search a 2D Matrix: 1) right = n or n - 1 2) while condition i < j or i <= j 3) update r = mid or mid - 1 4) return false or matrix[r/n][r%n] == target 
 
 Search a 2D Matrix II: *greedy trick start from top right
 
