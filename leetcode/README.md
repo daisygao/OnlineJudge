@@ -36,6 +36,8 @@ Binary Tree Paths: vector merge
 
 Binary Tree Postorder Traversal: medium pop condition
 
+Binary Tree Right Side View: right first DFS trick
+
 Binary Tree Preorder Traversal: stack, exit condition..
 
 Bulb Switcher: math
