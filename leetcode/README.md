@@ -86,6 +86,8 @@ Decode Ways: DP medium
 
 Delete Node in a Linked List: fill instead of "real" deletion
 
+Different Ways to Add Parentheses: * 1) recursive partition at every sign 2) map can't use vector<int>*
+
 Distinct Subsequences: DP medium
 
 Divide Two Integers: binary medium
