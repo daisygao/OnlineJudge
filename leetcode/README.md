@@ -122,7 +122,7 @@ Happy Number: all about hash
 
 House Robber: DP two params in equation = two variables
 
-House Robber III: recursive + hash
+House Robber III: * 1) tree dp, store more state 2) recursive + hash
 
 Implement Stack Using Queues: brilliant idea to use only one queue...making push() an O(n) operation...
 
