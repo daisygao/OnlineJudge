@@ -104,6 +104,8 @@ Factor Trailing Zeroes: math mod. similiar to Add Digits.
 
 Find Minimum in Sorted Array: infinity loop
 
+Find Peek Element: * binary search, cmp with right-hand element..
+
 First Bad Version: binary search, invariant: target in [i, j]
 
 First Missing Positive: classic
