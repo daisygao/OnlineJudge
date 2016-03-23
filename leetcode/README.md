@@ -238,6 +238,8 @@ Path Sum: when tree is null, no leaf so no sum, not even 0
 
 Path Sum II: easy 
 
+Peeking Iterator: Iterator(*this), Iterator::method()
+
 Permutation Sequence: easy 
 
 Permutations: deque or vector 
