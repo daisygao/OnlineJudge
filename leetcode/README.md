@@ -274,7 +274,7 @@ Regular Expression Matching: medium recursion
 
 Remove Duplicates from Sorted Array: cnt method... 
 
-Remove Duplicates from Sorted Array II: easy
+Remove Duplicates from Sorted Array II: * ans - 2 invariant
 
 Remove Duplicates from Sorted List: slim code!
 
