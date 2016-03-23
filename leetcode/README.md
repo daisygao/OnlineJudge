@@ -120,6 +120,8 @@ Generate Parentheses: 1) recursion, last case 2) iterative using queues
 
 Gray Code: classic trick generating subsets or binary numbers
 
+H Index: * smart 
+
 Happy Number: all about hash
 
 House Robber: DP two params in equation = two variables
