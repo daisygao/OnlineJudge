@@ -320,7 +320,7 @@ Search in Rotated Sorted Array II: medium
 
 Search Insert Position: 1) invariant 2) while condition 3) return value, left or right 
 
-Set Matrix Zeroes: details...
+Set Matrix Zeroes: * 1) place holder for row/col 0 2) leave first row/col to fill 0 in the end
 
 Simplify Path: easy details...
 
