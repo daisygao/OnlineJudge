@@ -352,6 +352,8 @@ Sum Root to Leaf Numbers: easy top-down
 
 Summary Ranges: j vs j + 1
 
+Super Ugly Number: * 1) use queues to store all results 2) use index array to store the current multiplier for each prime
+
 Surrounded Regions: medium queue
 
 Swap Nodes in Pairs: dummy head 
