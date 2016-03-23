@@ -128,6 +128,8 @@ Implement Stack Using Queues: brilliant idea to use only one queue...making push
 
 Implement strStr(): KMP. DP. psl=prefix, suffix, equal length. psl[i] = length of prefix same with suffix to current i. if not match, start from the next element of the latest matched prefix.
 
+Increasing Triplet Subsequence: * LIS
+
 Insert Interval: medium
 
 Insertion Sort List: medium
