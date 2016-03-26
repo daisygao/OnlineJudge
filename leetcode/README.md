@@ -105,7 +105,7 @@ Factor Trailing Zeroes: math mod. similiar to Add Digits.
 Find Minimum in Sorted Array: infinity loop
 
 Find Peek Element: * binary search, cmp with right-hand element..
-
+down
 First Bad Version: binary search, invariant: target in [i, j]
 
 First Missing Positive: classic
@@ -249,6 +249,8 @@ Path Sum: when tree is null, no leaf so no sum, not even 0
 Path Sum II: easy 
 
 Peeking Iterator: Iterator(*this), Iterator::method()
+
+Perfect Squares: DP
 
 Permutation Sequence: easy 
 
