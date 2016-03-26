@@ -122,6 +122,8 @@ Gray Code: classic trick generating subsets or binary numbers
 
 H Index: * smart 
 
+H Index II: binary search not in range: <= , in range <
+
 Happy Number: all about hash
 
 House Robber: DP two params in equation = two variables
