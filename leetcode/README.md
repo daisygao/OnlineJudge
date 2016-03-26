@@ -356,7 +356,7 @@ Substring with Concatenation of All Words: hash hash
 
 Sudoku Solver: medium boolean recursion & bit masking & 2-d array to 1-d array
 
-Sum Root to Leaf Numbers: easy top-down
+Sum Root to Leaf Numbers: O(n) 
 
 Summary Ranges: j vs j + 1
 
