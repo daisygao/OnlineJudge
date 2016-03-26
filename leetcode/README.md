@@ -184,6 +184,8 @@ Lowest Common Ancestor of a Binary Search Tree: easy
 
 Lowest Common Ancestor of a Binary Tree: recursion does everything 
 
+LRU Cache: * in local heap, you should new variable instead of just declare a local variable....address gets reused...
+
 Majority Element: median or Moore voting algorithm
 
 Maximum Product of Word Lengths: size_type can't deduct 1! pruning
