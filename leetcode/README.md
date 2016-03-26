@@ -328,7 +328,7 @@ Search for a Range: recursion or twice binary search
 
 Search in Rotated Sorted Array: classic 
 
-Search in Rotated Sorted Array II: medium
+Search in Rotated Sorted Array II: classic 
 
 Search Insert Position: 1) invariant 2) while condition 3) return value, left or right 
 
