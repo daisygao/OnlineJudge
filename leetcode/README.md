@@ -402,6 +402,8 @@ Valid Sudoku: became stupid...use bit mask array = unordered set...cell index co
 
 Validate Binary Search Tree : similar to Balanced Tree
 
+Verify Preorder Serialization of a Binary Tree: * 1) slots count 2) stack: quit condition..
+
 Wildcard Matching: hard
 
 Word Break: DP
