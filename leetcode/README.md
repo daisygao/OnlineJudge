@@ -142,6 +142,8 @@ Insert Interval: medium
 
 Insertion Sort List: medium
 
+Integer Break: *math
+
 Integer to Roman: no map needed. %5 trick. 
 
 Interleaving String: DP
