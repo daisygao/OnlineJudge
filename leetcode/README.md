@@ -112,7 +112,7 @@ First Bad Version: binary search, invariant: target in [i, j]
 
 First Missing Positive: classic
 
-Flatten Binary Tree to Linked List: easy
+Flatten Binary Tree to Linked List: * right, left middle
 
 Game of Life: * trick - bit + state iteration
 
