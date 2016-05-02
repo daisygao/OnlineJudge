@@ -74,7 +74,7 @@ Contains Duplicate II: 1) greedy 2) sliding window
 
 Convert Sorted Array to Binary Search Tree: for C++, new TreeNode 
 
-Convert Sorted List to Binary Search Tree: medium global pointer bottom-up recursion 
+Convert Sorted List to Binary Search Tree: bottom up - move pointer after previous recursion 
 
 Copy List with Random Pointer: deep copy queue
 
