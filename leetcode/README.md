@@ -400,7 +400,7 @@ Unique Binary Search Trees II: recursion
 
 Unique Paths: DP 1d + init row / column
 
-Unique Paths II: DP 1d
+Unique Paths II: * 1) for auto row 2) initial value at [0][0] 3) 1D DP
 
 Valid Anagram: vector initialization
 
