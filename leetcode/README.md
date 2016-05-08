@@ -338,7 +338,7 @@ Search a 2D Matrix: 1) right = n or n - 1 2) while condition i < j or i <= j 3) 
 
 Search a 2D Matrix II: *greedy trick start from top right
 
-Search for a Range: recursion or twice binary search
+Search for a Range: * 1) r = nums.size() for loose search 2) cap in the main function instead of the helper function 3) vector const initialization
 
 Search in Rotated Sorted Array: classic 
 
