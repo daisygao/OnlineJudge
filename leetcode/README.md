@@ -256,6 +256,8 @@ Pascal's Triangle: one row DP
 
 Pascal's Triangle II: one row DP direction reversed
 
+Patching Array: * 1) optimal use DP or greedy 2) subproblem 3) i out-of-index 4) overflow, use long int
+
 Path Sum: when tree is null, no leaf so no sum, not even 0 
 
 Path Sum II: easy 
