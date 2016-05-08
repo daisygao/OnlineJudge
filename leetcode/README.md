@@ -262,7 +262,7 @@ Perfect Squares: DP
 
 Permutation Sequence: easy 
 
-Permutations: deque or vector 
+Permutations: swap, deque or vector 
 
 Permutations II: next permutation problem
 
