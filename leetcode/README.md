@@ -40,6 +40,8 @@ Binary Tree Right Side View: right first DFS trick
 
 Binary Tree Preorder Traversal: stack, exit condition..
 
+Bitwise AND of Numbers Range: * recursion
+
 Bulb Switcher: math
 
 Bulls and Cows: * one pass counter...brilliant
