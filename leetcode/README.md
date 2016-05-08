@@ -388,7 +388,7 @@ Text Justification: medium
 
 Trapping Rain Water: double-way DP O(n)
 
-Triangle: DP O(n^2)
+Triangle: recursion (time exceed) -> subproblem -> DP bottom up 
 
 Two Sum: hash / quicksort + binary 
 
