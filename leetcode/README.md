@@ -1,6 +1,6 @@
 3Sum: easy
 
-3Sum Closest: easy
+3Sum Closest: ?: statement, maxDiff, can't prune 
 
 4Sum: O(n^3) consider efficiency of ArrayList expansion operation
 
