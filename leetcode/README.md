@@ -64,8 +64,7 @@ Combinations: both iterative and recursion
 
 Compare Version Numbers: multiple dots scenarios
 
-Construct Binary Tree from Inorder and Postorder Traversal: easy
-
+Construct Binary Tree from Inorder and Postorder Traversal: * stack and recursion!!!
 Construct Binary Tree from Preorder and Inorder Traversal: easy
 
 Container With Most Water: * greedy scan
